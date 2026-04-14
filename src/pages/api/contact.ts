@@ -1,9 +1,17 @@
 import type { APIRoute } from 'astro';
 import { Resend } from 'resend';
-
-const resend = new Resend(import.meta.env.RESEND_API_KEY);
+import { escapeHtml, getMailFrom, getMailTo, getResendApiKey } from '../../lib/mail';
 
 export const POST: APIRoute = async ({ request }) => {
+  const apiKey = getResendApiKey();
+  if (!apiKey) {
+    console.error('contact: RESEND_API_KEY is not set (check Vercel Environment Variables)');
+    return new Response(JSON.stringify({ error: 'Email service is not configured.' }), {
+      status: 503,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  }
+
   try {
     const { name, email, message } = await request.json();
 
@@ -22,19 +30,31 @@ export const POST: APIRoute = async ({ request }) => {
       });
     }
 
-    await resend.emails.send({
-      from: 'Briler <onboarding@resend.dev>',
-      to: 'info@briler.net',
+    const resend = new Resend(apiKey);
+    const safeName = escapeHtml(String(name));
+    const safeBody = escapeHtml(String(message)).replace(/\n/g, '<br />');
+
+    const { error } = await resend.emails.send({
+      from: getMailFrom(),
+      to: getMailTo(),
       replyTo: email,
       subject: `Contact from briler.net: ${name}`,
       html: `
         <h2>New contact message</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Name:</strong> ${safeName}</p>
+        <p><strong>Email:</strong> ${escapeHtml(email)}</p>
         <hr />
-        <p>${message.replace(/\n/g, '<br />')}</p>
+        <p>${safeBody}</p>
       `,
     });
+
+    if (error) {
+      console.error('Resend contact error:', error.name, error.message);
+      return new Response(JSON.stringify({ error: 'Could not send email. Please try again later.' }), {
+        status: 502,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
 
     return new Response(JSON.stringify({ ok: true }), {
       status: 200,
