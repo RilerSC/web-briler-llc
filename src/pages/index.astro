@@ -4,13 +4,35 @@ import Layout from '../layouts/Layout.astro';
 const launchDate = '2025-06-01T00:00:00';
 ---
 
-<Layout title="Briler — Coming Soon">
+<Layout title="Briler — Digital Products & Engineering">
+  <!-- ════════ NAV ════════ -->
+  <header
+    class="sticky top-0 z-50 border-b border-white/5 bg-brand-black/75 backdrop-blur-md supports-[backdrop-filter]:bg-brand-black/60"
+  >
+    <nav class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-y-3 px-4 py-3 md:px-6" aria-label="Main">
+      <a href="#hero" class="flex items-center gap-2 shrink-0">
+        <img src="/img/ISOTIPO-COLOR-BLANCO.svg" alt="" class="h-9 w-auto opacity-90" width="36" height="36" />
+        <span class="font-semibold tracking-tight text-white">Briler</span>
+      </a>
+      <div class="order-3 flex w-full basis-full items-center justify-center gap-5 text-xs text-gray-400 sm:order-none sm:w-auto sm:basis-auto sm:gap-8 sm:text-sm">
+        <a href="#services" class="hover:text-white transition">Services</a>
+        <a href="#about" class="hover:text-white transition">About</a>
+        <a href="#contact" class="hover:text-white transition">Contact</a>
+      </div>
+      <a
+        href="#contact"
+        class="rounded-lg bg-gradient-to-r from-brand-lilac to-brand-cyan px-3 py-2 text-xs font-semibold text-white shadow-lg shadow-brand-lilac/20 hover:opacity-95 transition shrink-0 sm:px-4 sm:text-sm"
+      >
+        Start a Project
+      </a>
+    </nav>
+  </header>
+
   <!-- ════════ HERO ════════ -->
   <section
     id="hero"
-    class="relative min-h-screen flex flex-col items-center justify-center px-6 overflow-hidden"
+    class="relative min-h-[60vh] lg:min-h-[70vh] flex flex-col items-center justify-center px-6 pt-10 pb-16 overflow-hidden"
   >
-    <!-- Background gradient orbs -->
     <div
       class="pointer-events-none absolute -top-40 -left-40 h-[600px] w-[600px] rounded-full bg-brand-purple/20 blur-[160px]"
     ></div>
@@ -18,98 +40,138 @@ const launchDate = '2025-06-01T00:00:00';
       class="pointer-events-none absolute -bottom-40 -right-40 h-[500px] w-[500px] rounded-full bg-brand-cyan/15 blur-[140px]"
     ></div>
 
-    <img
-      src="/img/LOGO-COLOR-BLANCO.svg"
-      alt="Briler LLC"
-      class="w-56 md:w-72 mb-8 drop-shadow-2xl animate-fade-in"
-    />
-
     <h1
-      class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-center leading-tight tracking-tight animate-fade-in-up"
+      class="relative max-w-4xl text-center text-3xl font-extrabold leading-tight tracking-tight sm:text-5xl md:text-6xl animate-fade-in-up"
     >
       <span class="bg-gradient-to-r from-brand-lilac via-brand-light to-brand-cyan bg-clip-text text-transparent">
-        Coming Soon
+        We Build Digital Products That Drive Results
       </span>
     </h1>
 
-    <p class="mt-4 max-w-xl text-center text-lg text-gray-400 animate-fade-in-up animation-delay-200">
-      We're building something extraordinary. Be the first to know.
+    <p class="relative mt-6 max-w-2xl text-center text-base text-gray-400 sm:text-lg md:text-xl animate-fade-in-up animation-delay-200">
+      Briler LLC designs and ships websites, web apps, mobile apps, and enterprise software for teams that need
+      speed, quality, and measurable outcomes.
     </p>
 
-    <!-- ════════ COUNTDOWN ════════ -->
-    <div
-      id="countdown"
-      class="mt-12 grid grid-cols-4 gap-4 md:gap-8 animate-fade-in-up animation-delay-400"
-      data-launch={launchDate}
-    >
-      <div class="countdown-card">
-        <span id="days" class="countdown-number">00</span>
-        <span class="countdown-label">Days</span>
-      </div>
-      <div class="countdown-card">
-        <span id="hours" class="countdown-number">00</span>
-        <span class="countdown-label">Hours</span>
-      </div>
-      <div class="countdown-card">
-        <span id="minutes" class="countdown-number">00</span>
-        <span class="countdown-label">Minutes</span>
-      </div>
-      <div class="countdown-card">
-        <span id="seconds" class="countdown-number">00</span>
-        <span class="countdown-label">Seconds</span>
-      </div>
+    <div class="relative mt-10 flex flex-col items-stretch gap-3 sm:flex-row sm:justify-center animate-fade-in-up animation-delay-400">
+      <a
+        href="#contact"
+        class="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-brand-lilac to-brand-cyan px-8 py-3.5 font-semibold text-white shadow-lg shadow-brand-lilac/25 hover:shadow-brand-cyan/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+      >
+        Start Your Project
+      </a>
+      <a
+        href="#services"
+        class="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-8 py-3.5 font-semibold text-white backdrop-blur-sm hover:border-brand-lilac/40 hover:bg-white/[0.08] transition-all duration-200"
+      >
+        See What We Do
+      </a>
     </div>
 
-    <!-- ════════ EMAIL CAPTURE ════════ -->
-    <form
-      id="email-form"
-      class="mt-12 flex flex-col sm:flex-row gap-3 w-full max-w-md animate-fade-in-up animation-delay-600"
-    >
-      <input
-        type="email"
-        name="email"
-        required
-        placeholder="you@email.com"
-        class="flex-1 rounded-xl border border-white/10 bg-white/5 px-5 py-3 text-white placeholder-gray-500 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-brand-lilac/60 transition"
-      />
-      <button
-        type="submit"
-        class="rounded-xl bg-gradient-to-r from-brand-lilac to-brand-cyan px-8 py-3 font-semibold text-white shadow-lg shadow-brand-lilac/25 hover:shadow-brand-cyan/30 hover:scale-[1.03] active:scale-[0.98] transition-all duration-200"
-      >
-        Notify Me
-      </button>
-    </form>
-    <p id="email-msg" class="mt-3 text-sm text-gray-500 h-5"></p>
-
-    <!-- Scroll indicator -->
     <a
-      href="#about"
-      class="absolute bottom-8 animate-bounce text-gray-500 hover:text-brand-cyan transition"
-      aria-label="Scroll down"
+      href="#services"
+      class="relative mt-14 flex flex-col items-center gap-2 text-sm text-gray-500 hover:text-brand-cyan transition animate-fade-in-up animation-delay-600"
+      aria-label="Scroll to services"
     >
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <span>Explore services</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
       </svg>
     </a>
   </section>
 
-  <!-- ════════ ABOUT / BRANDING ════════ -->
-  <section id="about" class="relative py-24 px-6">
-    <div class="mx-auto max-w-4xl text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+  <!-- ════════ SERVICES ════════ -->
+  <section id="services" class="relative scroll-mt-20 py-20 px-6">
+    <div class="mx-auto max-w-5xl">
+      <h2 class="text-center text-3xl font-bold md:text-4xl">
         <span class="bg-gradient-to-r from-brand-lilac to-brand-cyan bg-clip-text text-transparent">
-          Who We Are
+          What We Build
         </span>
       </h2>
-      <p class="text-lg text-gray-400 leading-relaxed max-w-2xl mx-auto">
-        <strong class="text-white">Briler LLC</strong> is a technology company focused on building high-impact
-        digital solutions. We combine design, engineering, and strategy to turn ideas into products
-        that deliver real results.
+      <p class="mx-auto mt-4 max-w-2xl text-center text-gray-400">
+        From marketing sites to mission-critical systems — we help you ship with confidence.
       </p>
 
-      <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="group rounded-2xl border border-white/5 bg-white/[0.02] p-8 backdrop-blur-sm hover:border-brand-lilac/30 transition-all duration-300">
+      <div class="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div class="group rounded-2xl border border-white/5 bg-white/[0.02] p-8 backdrop-blur-sm transition-all duration-300 hover:border-brand-lilac/30">
           <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-lilac/10 text-brand-lilac">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-white">Websites &amp; Landing Pages</h3>
+          <p class="mt-2 text-sm text-gray-500">
+            Fast, conversion-focused sites and landing experiences that turn visitors into leads.
+          </p>
+          <a href="#contact" class="mt-4 inline-block text-sm font-medium text-brand-cyan hover:text-brand-lilac transition">
+            Learn more →
+          </a>
+        </div>
+
+        <div class="group rounded-2xl border border-white/5 bg-white/[0.02] p-8 backdrop-blur-sm transition-all duration-300 hover:border-brand-light/30">
+          <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-light/10 text-brand-light">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-white">Web Applications</h3>
+          <p class="mt-2 text-sm text-gray-500">
+            SaaS products, customer portals, and internal tools built for scale and security.
+          </p>
+          <a href="#contact" class="mt-4 inline-block text-sm font-medium text-brand-cyan hover:text-brand-lilac transition">
+            Learn more →
+          </a>
+        </div>
+
+        <div class="group rounded-2xl border border-white/5 bg-white/[0.02] p-8 backdrop-blur-sm transition-all duration-300 hover:border-brand-cyan/30">
+          <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-cyan/10 text-brand-cyan">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-white">Mobile Apps</h3>
+          <p class="mt-2 text-sm text-gray-500">
+            Native-quality iOS and Android experiences your users will want to open every day.
+          </p>
+          <a href="#contact" class="mt-4 inline-block text-sm font-medium text-brand-cyan hover:text-brand-lilac transition">
+            Learn more →
+          </a>
+        </div>
+
+        <div class="group rounded-2xl border border-white/5 bg-white/[0.02] p-8 backdrop-blur-sm transition-all duration-300 hover:border-brand-purple/30">
+          <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-purple/10 text-brand-lilac">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-white">Enterprise Software</h3>
+          <p class="mt-2 text-sm text-gray-500">
+            Reliable systems for operations, compliance, and teams that can&apos;t afford downtime.
+          </p>
+          <a href="#contact" class="mt-4 inline-block text-sm font-medium text-brand-cyan hover:text-brand-lilac transition">
+            Learn more →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ WHY BRILER ════════ -->
+  <section id="about" class="relative scroll-mt-20 py-20 px-6">
+    <div class="mx-auto max-w-4xl text-center">
+      <h2 class="text-3xl font-bold md:text-4xl">
+        <span class="bg-gradient-to-r from-brand-lilac to-brand-cyan bg-clip-text text-transparent">
+          Why Teams Choose Briler
+        </span>
+      </h2>
+      <p class="mt-4 text-lg text-gray-400 leading-relaxed max-w-2xl mx-auto">
+        <strong class="text-white">Briler LLC</strong> combines product thinking with engineering discipline. We
+        ship fast without cutting corners — so your roadmap stays credible and your users stay happy.
+      </p>
+
+      <div class="mt-14 grid grid-cols-1 md:grid-cols-3 gap-8 text-left md:text-center">
+        <div class="group rounded-2xl border border-white/5 bg-white/[0.02] p-8 backdrop-blur-sm hover:border-brand-lilac/30 transition-all duration-300">
+          <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-lilac/10 text-brand-lilac md:mx-auto">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
@@ -119,7 +181,7 @@ const launchDate = '2025-06-01T00:00:00';
         </div>
 
         <div class="group rounded-2xl border border-white/5 bg-white/[0.02] p-8 backdrop-blur-sm hover:border-brand-light/30 transition-all duration-300">
-          <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-light/10 text-brand-light">
+          <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-light/10 text-brand-light md:mx-auto">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
             </svg>
@@ -129,7 +191,7 @@ const launchDate = '2025-06-01T00:00:00';
         </div>
 
         <div class="group rounded-2xl border border-white/5 bg-white/[0.02] p-8 backdrop-blur-sm hover:border-brand-cyan/30 transition-all duration-300">
-          <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-cyan/10 text-brand-cyan">
+          <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-cyan/10 text-brand-cyan md:mx-auto">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
@@ -141,8 +203,68 @@ const launchDate = '2025-06-01T00:00:00';
     </div>
   </section>
 
+  <!-- ════════ LAUNCH TEASER ════════ -->
+  <section
+    id="launch"
+    class="relative scroll-mt-20 border-y border-white/5 bg-gradient-to-b from-brand-purple/10 via-transparent to-brand-blue/10 py-16 px-6"
+  >
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="text-2xl font-bold md:text-3xl">
+        <span class="bg-gradient-to-r from-brand-lilac to-brand-cyan bg-clip-text text-transparent">
+          Our Full Platform Is Launching Soon
+        </span>
+      </h2>
+      <p class="mt-3 text-gray-400">
+        Get early access and be the first to know when we go live.
+      </p>
+
+      <div
+        id="countdown"
+        class="mt-8 flex flex-wrap justify-center gap-3 sm:gap-6"
+        data-launch={launchDate}
+      >
+        <div class="countdown-card countdown-card--compact">
+          <span id="days" class="countdown-number">00</span>
+          <span class="countdown-label">Days</span>
+        </div>
+        <div class="countdown-card countdown-card--compact">
+          <span id="hours" class="countdown-number">00</span>
+          <span class="countdown-label">Hours</span>
+        </div>
+        <div class="countdown-card countdown-card--compact">
+          <span id="minutes" class="countdown-number">00</span>
+          <span class="countdown-label">Minutes</span>
+        </div>
+        <div class="countdown-card countdown-card--compact">
+          <span id="seconds" class="countdown-number">00</span>
+          <span class="countdown-label">Seconds</span>
+        </div>
+      </div>
+
+      <form
+        id="email-form"
+        class="mt-10 mx-auto flex max-w-md flex-col gap-3 sm:flex-row sm:items-stretch"
+      >
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="you@email.com"
+          class="flex-1 rounded-xl border border-white/10 bg-white/5 px-5 py-3 text-white placeholder-gray-500 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-brand-lilac/60 transition"
+        />
+        <button
+          type="submit"
+          class="rounded-xl bg-gradient-to-r from-brand-lilac to-brand-cyan px-8 py-3 font-semibold text-white shadow-lg shadow-brand-lilac/25 hover:shadow-brand-cyan/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 whitespace-nowrap"
+        >
+          Get Early Access
+        </button>
+      </form>
+      <p id="email-msg" class="mt-3 text-sm text-gray-500 min-h-[1.25rem]"></p>
+    </div>
+  </section>
+
   <!-- ════════ CONTACT ════════ -->
-  <section id="contact" class="relative py-24 px-6">
+  <section id="contact" class="relative scroll-mt-20 py-24 px-6">
     <div
       class="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-[400px] w-[600px] rounded-full bg-brand-purple/10 blur-[160px]"
     ></div>
@@ -285,14 +407,28 @@ const launchDate = '2025-06-01T00:00:00';
     background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(8px);
   }
+  .countdown-card--compact {
+    width: 72px;
+    height: 82px;
+  }
+  @media (min-width: 640px) {
+    .countdown-card--compact {
+      width: 88px;
+      height: 96px;
+    }
+  }
   @media (min-width: 768px) {
     .countdown-card {
       width: 110px;
       height: 120px;
     }
+    .countdown-card--compact {
+      width: 100px;
+      height: 108px;
+    }
   }
   .countdown-number {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 700;
     background: linear-gradient(135deg, #8148ff, #00d2ff);
     -webkit-background-clip: text;
@@ -300,14 +436,19 @@ const launchDate = '2025-06-01T00:00:00';
     background-clip: text;
     line-height: 1;
   }
+  @media (min-width: 640px) {
+    .countdown-number {
+      font-size: 2rem;
+    }
+  }
   @media (min-width: 768px) {
     .countdown-number {
-      font-size: 2.75rem;
+      font-size: 2.5rem;
     }
   }
   .countdown-label {
     margin-top: 0.25rem;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: rgb(156 163 175);
@@ -353,7 +494,7 @@ const launchDate = '2025-06-01T00:00:00';
 
     if (emailMsg) {
       emailMsg.textContent = 'Sending...';
-      emailMsg.className = 'mt-3 text-sm text-gray-400 h-5';
+      emailMsg.className = 'mt-3 text-sm text-gray-400 min-h-[1.25rem]';
     }
 
     try {
@@ -366,19 +507,19 @@ const launchDate = '2025-06-01T00:00:00';
       if (res.ok) {
         if (emailMsg) {
           emailMsg.textContent = "You're in! We'll notify you when we launch.";
-          emailMsg.className = 'mt-3 text-sm text-green-400 h-5';
+          emailMsg.className = 'mt-3 text-sm text-green-400 min-h-[1.25rem]';
         }
         emailForm.reset();
       } else {
         if (emailMsg) {
           emailMsg.textContent = data.error || 'Something went wrong. Please try again.';
-          emailMsg.className = 'mt-3 text-sm text-red-400 h-5';
+          emailMsg.className = 'mt-3 text-sm text-red-400 min-h-[1.25rem]';
         }
       }
     } catch {
       if (emailMsg) {
         emailMsg.textContent = 'Connection error. Please try again.';
-        emailMsg.className = 'mt-3 text-sm text-red-400 h-5';
+        emailMsg.className = 'mt-3 text-sm text-red-400 min-h-[1.25rem]';
       }
     }
   });
