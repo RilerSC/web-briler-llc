@@ -7,6 +7,7 @@ import "../globals.css";
 import "../briler.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import OrganizationJsonLd from "../components/OrganizationJsonLd";
 import { locales } from "../../i18n";
 
 const sora = Sora({
@@ -91,6 +92,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} data-scroll-behavior="smooth" className={`${sora.variable} ${inter.variable} ${jetbrains.variable}`}>
       <body>
+        <OrganizationJsonLd locale={locale} />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
           <main id="main">{children}</main>

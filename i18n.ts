@@ -23,11 +23,12 @@ export default getRequestConfig(async ({ locale }) => {
 
   // Cargar mensajes del locale validado
   const messages = (await import(`./messages/${validLocale}.json`)).default;
+  const solutionPages = (await import(`./messages/solutionPages.${validLocale}.json`)).default;
   
   console.log(">>> SERVER: Mensajes cargados exitosamente de", `${validLocale}.json`);
 
   return {
     locale: validLocale,
-    messages,
+    messages: { ...messages, solutionPages },
   };
 });

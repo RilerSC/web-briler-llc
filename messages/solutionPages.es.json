@@ -1,0 +1,492 @@
+{
+  "catalog": {
+    "software": "Software a medida",
+    "integration": "Integración de sistemas",
+    "legacy": "Modernización legacy",
+    "automation": "Automatización e IA",
+    "infrastructure": "Infraestructura y arquitectura"
+  },
+  "shared": {
+    "home": "Inicio",
+    "solutions": "Soluciones",
+    "relatedLabel": "Capacidades que este caso hace visibles",
+    "consulting": "La consultoría recorre este trabajo: diagnosticar, diseñar, construir y evolucionar.",
+    "evidenceEyebrow": "Evidencia",
+    "depthEyebrow": "Profundidad técnica",
+    "approachEyebrow": "Cómo lo abordamos",
+    "readCase": "Leer el caso",
+    "ctaContact": "Plantear el desafío",
+    "ctaSchedule": "Agendar una conversación"
+  },
+  "software": {
+    "meta": {
+      "title": "Desarrollo de software a medida para empresas | BRILER",
+      "description": "Diseñamos y construimos software alrededor de cómo opera una organización cuando una solución estándar no encaja. Costa Rica, Estados Unidos y España."
+    },
+    "schema": {
+      "name": "Desarrollo de software a medida",
+      "serviceType": "Custom software development"
+    },
+    "hero": {
+      "eyebrow": "Software a medida",
+      "title": "Software que se construye alrededor de cómo opera el negocio.",
+      "lede": "Cuando una herramienta estándar no cubre el proceso, BRILER diseña y construye la aplicación, la plataforma o el sistema que la organización sí puede operar."
+    },
+    "matter": {
+      "eyebrow": "El problema",
+      "title": "El proceso existe. El software, no.",
+      "body": [
+        "Hay operaciones que no caben en un producto de catálogo. Las herramientas se acumulan, cada equipo resuelve su parte y el crecimiento se frena porque el sistema no representa cómo se toma una decisión o se cierra un ciclo.",
+        "Ese vacío no se llena con más licencias. Se llena con software diseñado sobre responsabilidades reales: quién hace qué, qué dato es verdad y qué tiene que quedar en producción."
+      ]
+    },
+    "does": {
+      "eyebrow": "Qué hace BRILER",
+      "title": "Convertir una operación particular en un sistema que se puede mantener.",
+      "body": [
+        "Partimos del negocio, no del stack. Definimos el alcance, la arquitectura y la forma en que el sistema va a convivir con lo que ya existe. Después lo construimos e integramos lo necesario para que no quede aislado.",
+        "No vendemos un framework. Vendemos un sistema que una organización puede operar cuando el estándar no alcanza."
+      ]
+    },
+    "capabilities": [
+      "Aplicaciones web y plataformas",
+      "Sistemas empresariales a medida",
+      "PWA y aplicaciones cuando el canal lo pide",
+      "Backend y APIs",
+      "Integración con sistemas existentes",
+      "Arquitectura de la solución"
+    ],
+    "approach": {
+      "title": "Del proceso real al software en producción.",
+      "steps": [
+        {
+          "label": "Diagnosticar la operación",
+          "body": "Entendemos el proceso, los huecos entre herramientas y la decisión que el sistema tiene que sostener."
+        },
+        {
+          "label": "Diseñar alrededor del negocio",
+          "body": "La arquitectura sigue responsabilidades, no un catálogo de módulos. Se decide qué construir, qué reutilizar y qué conectar."
+        },
+        {
+          "label": "Construir e integrar",
+          "body": "Se entrega un sistema usable, con las APIs y los intercambios que necesita para no vivir aparte de la operación."
+        },
+        {
+          "label": "Evolucionar",
+          "body": "El software queda preparado para crecer con el negocio, no como un proyecto que termina el día del go-live."
+        }
+      ]
+    },
+    "evidence": {
+      "title": "Tres sistemas distintos. El mismo principio: el software sigue al negocio.",
+      "items": [
+        {
+          "slug": "erp-web-coopebanacio",
+          "title": "ERP-WEB",
+          "reason": "Un ERP construido a medida porque la operación cooperativa no se resolvía sustituyendo el núcleo de un día para otro."
+        },
+        {
+          "slug": "autogestion-coopebanacio",
+          "title": "AUTOGESTIÓN",
+          "reason": "Una aplicación de asociados que traduce procesos del core a un canal digital, en lugar de pedir que el asociado entre al sistema interno."
+        },
+        {
+          "slug": "coopemercadito-coopebanacio",
+          "title": "COOPEMERCADITO",
+          "reason": "Una plataforma de marketplace diseñada alrededor de cómo esa cooperativa conecta oferta y demanda."
+        }
+      ]
+    },
+    "depth": {
+      "title": "Lo que un comprador técnico suele necesitar ver.",
+      "items": [
+        {
+          "title": "Arquitectura de solución",
+          "body": "Límites del sistema, datos de verdad y puntos de integración definidos antes de construir pantallas."
+        },
+        {
+          "title": "Convivencia con lo existente",
+          "body": "El software nuevo no asume un terreno vacío. Se diseña para APIs, identidades y procesos que ya están en producción."
+        },
+        {
+          "title": "Operación después del lanzamiento",
+          "body": "Despliegue, mantenimiento y evolución forman parte del diseño. Un sistema a medida que no se puede operar no es una solución."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Siguiente conversación",
+      "title": "Si el estándar no cubre el proceso, empecemos por el proceso.",
+      "lede": "Cuéntanos cómo opera hoy la organización. Ahí se decide si hace falta construir software — y qué software."
+    }
+  },
+  "integration": {
+    "meta": {
+      "title": "Integración de sistemas empresariales | BRILER",
+      "description": "Integramos ERP, CRM y sistemas de negocio alrededor de las responsabilidades reales de cada uno. No vendemos conectores: diseñamos el intercambio."
+    },
+    "schema": {
+      "name": "Integración de sistemas empresariales",
+      "serviceType": "Systems integration"
+    },
+    "hero": {
+      "eyebrow": "Integración de sistemas",
+      "title": "Los sistemas no tienen que ser uno solo para trabajar como una operación.",
+      "lede": "BRILER diseña integraciones alrededor de lo que cada sistema sabe y debe seguir sabiendo. El objetivo no es un conector. Es una operación conectada."
+    },
+    "matter": {
+      "eyebrow": "El problema",
+      "title": "Cada sistema conoce una parte distinta del mismo hecho.",
+      "body": [
+        "ERP, CRM, cores financieros y plataformas nuevas suelen convivir sin un contrato claro. La misma persona, el mismo movimiento o el mismo estado aparecen con otro significado según quién pregunte.",
+        "Eso no se resuelve copiando campos. Se resuelve entendiendo responsabilidades: qué sistema es fuente, qué se transforma y qué no debe sobrescribirse."
+      ]
+    },
+    "does": {
+      "eyebrow": "Qué hace BRILER",
+      "title": "Arquitectura de intercambio, no un cable entre APIs.",
+      "body": [
+        "Mapeamos el dominio, el sentido de cada entidad y el flujo que el negocio necesita. Después construimos la integración: APIs, transformación, reglas y los controles para que el intercambio no se vuelva un atajo frágil.",
+        "Un conector mueve datos. Una integración bien diseñada mueve significado."
+      ]
+    },
+    "capabilities": [
+      "Integración ERP y CRM",
+      "APIs e intercambio de datos",
+      "Mapeo de dominio entre sistemas",
+      "Transformación y orquestación",
+      "Conexión de plataformas nuevas con legacy",
+      "Reglas de responsabilidad por sistema"
+    ],
+    "approach": {
+      "title": "Primero el significado. Después el puente.",
+      "steps": [
+        {
+          "label": "Mapear responsabilidades",
+          "body": "Qué conoce cada sistema, qué puede emitir y qué no debería intentar ser."
+        },
+        {
+          "label": "Diseñar el contrato",
+          "body": "Entidades, dirección del flujo y transformaciones. El puente se dibuja antes de escribirlo."
+        },
+        {
+          "label": "Construir el intercambio",
+          "body": "APIs, jobs y validaciones que respetan el contrato. La automatización entra cuando el significado ya está claro."
+        },
+        {
+          "label": "Operar el puente",
+          "body": "La integración se mantiene como una capacidad, no como un script que nadie quiere tocar."
+        }
+      ]
+    },
+    "evidence": {
+      "title": "El caso que mejor muestra este trabajo.",
+      "items": [
+        {
+          "slug": "hubspot-core-coopebanacio",
+          "title": "HubSpot ↔ Core financiero",
+          "reason": "Dos sistemas con oficios distintos. El puente traduce significado; no pretende que ambos se vuelvan el mismo sistema."
+        },
+        {
+          "slug": "autogestion-coopebanacio",
+          "title": "AUTOGESTIÓN",
+          "reason": "Un canal nuevo que tenía que consumir el core existente sin reescribir la operación interna."
+        },
+        {
+          "slug": "erp-web-coopebanacio",
+          "title": "ERP-WEB",
+          "reason": "Una plataforma moderna que convive e intercambia con el sistema al que está sustituyendo por capacidades."
+        }
+      ]
+    },
+    "depth": {
+      "title": "Lo que suele importar cuando se evalúa una integración.",
+      "items": [
+        {
+          "title": "Dirección del flujo",
+          "body": "No todo es bidireccional. En HubSpot ↔ Core, el enriquecimiento de contacto hacia HubSpot no es un espejo de todo el dominio."
+        },
+        {
+          "title": "Identidad y matching",
+          "body": "Antes de mover un registro hay que saber de quién se trata. El matching es parte de la arquitectura, no un detalle de implementación."
+        },
+        {
+          "title": "Transformación explícita",
+          "body": "Los campos no se copian a ciegas. Cada cruce declara qué se traduce, qué se omite y qué queda en el sistema de origen."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Siguiente conversación",
+      "title": "Si cada sistema habla un idioma distinto, diseñemos el puente.",
+      "lede": "Cuéntanos qué conoce cada plataforma. Empezamos por las responsabilidades, no por el conector."
+    }
+  },
+  "legacy": {
+    "meta": {
+      "title": "Modernización de sistemas legacy | BRILER",
+      "description": "Modernizamos sistemas críticos de forma progresiva. Coexistir, transitar y modernizar — sin exigir un reemplazo total el primer día."
+    },
+    "schema": {
+      "name": "Modernización de sistemas legacy",
+      "serviceType": "Legacy system modernization"
+    },
+    "hero": {
+      "eyebrow": "Modernización legacy",
+      "title": "Modernizar no siempre significa reemplazar.",
+      "lede": "BRILER evoluciona sistemas críticos por capacidades. Se preserva la operación, el conocimiento y lo que todavía aporta valor mientras una capa nueva toma el relevo."
+    },
+    "matter": {
+      "eyebrow": "El problema",
+      "title": "El sistema es antiguo. El negocio no puede detenerse.",
+      "body": [
+        "Un core legacy suele ser difícil de sustituir precisamente porque funciona. Encierra procesos, excepciones y dependencias que no caben en un corte de un fin de semana.",
+        "La interfaz envejece, las nuevas capacidades se atascan y la organización queda atada a un sistema que no puede apagar. El riesgo no es solo tecnológico. Es operacional."
+      ]
+    },
+    "does": {
+      "eyebrow": "Qué hace BRILER",
+      "title": "Coexistir, transitar, modernizar.",
+      "body": [
+        "No prometemos un reemplazo big-bang. Construimos la capacidad nueva, la hacemos convivir con el núcleo que todavía sostiene el negocio y movemos responsabilidades cuando están listas.",
+        "El resultado es una modernización que se puede operar: el legacy no se niega; se delimita."
+      ]
+    },
+    "capabilities": [
+      "Modernización progresiva de sistemas críticos",
+      "Coexistencia entre legacy y plataforma nueva",
+      "Nuevas experiencias sobre un core existente",
+      "Migración por capacidades, no por corte total",
+      "Integración con el sistema que todavía opera",
+      "Arquitectura de transición"
+    ],
+    "approach": {
+      "title": "Una transición que el negocio puede sostener.",
+      "steps": [
+        {
+          "label": "Coexistir",
+          "body": "La plataforma nueva nace junto al sistema actual. El negocio sigue operando mientras se define qué viaja y qué se queda."
+        },
+        {
+          "label": "Transitar",
+          "body": "Las capacidades se mueven cuando tienen contrato, datos y operación claros. No se apaga el núcleo para estrenar una pantalla."
+        },
+        {
+          "label": "Modernizar",
+          "body": "El sistema nuevo toma el relevo donde ya aporta valor. El legacy se reduce a lo que todavía justifica su existencia."
+        }
+      ]
+    },
+    "evidence": {
+      "title": "El caso que sostiene esta conversación.",
+      "items": [
+        {
+          "slug": "erp-web-coopebanacio",
+          "title": "ERP-WEB",
+          "reason": "Un ERP crítico se moderniza por coexistencia y transición. CODEAS sigue en operación mientras ERP-WEB toma capacidades."
+        }
+      ]
+    },
+    "depth": {
+      "title": "Decisiones que aparecen en una modernización real.",
+      "items": [
+        {
+          "title": "Qué se conserva",
+          "body": "No todo el legacy es deuda. Parte es conocimiento operacional que todavía no está escrito en otro lado."
+        },
+        {
+          "title": "Contrato de coexistencia",
+          "body": "Dos generaciones tecnológicas necesitan reglas: quién es fuente, qué se replica y qué se atiende solo en la capa nueva."
+        },
+        {
+          "title": "Corte por capacidad",
+          "body": "Se moderniza un oficio del sistema, no «todo el ERP». Esa es la diferencia entre una transición y un apagón."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Siguiente conversación",
+      "title": "Si el sistema crítico no se puede apagar, hablemos de transición.",
+      "lede": "Cuéntanos qué no puede detenerse. Ahí se diseña la coexistencia."
+    }
+  },
+  "automation": {
+    "meta": {
+      "title": "Automatización e IA aplicada para empresas | BRILER",
+      "description": "Automatizamos lo repetitivo y aplicamos inteligencia donde mejora una decisión, un proceso o una operación. Sin vender IA como moda."
+    },
+    "schema": {
+      "name": "Automatización e inteligencia artificial aplicada",
+      "serviceType": "Business process automation"
+    },
+    "hero": {
+      "eyebrow": "Automatización e IA aplicada",
+      "title": "Automatizar lo repetitivo. Aplicar inteligencia donde cambia una decisión.",
+      "lede": "BRILER no vende inteligencia artificial como espectáculo. Reducimos trabajo manual y usamos modelos solo cuando mejoran un proceso que la organización ya entiende."
+    },
+    "matter": {
+      "eyebrow": "El problema",
+      "title": "Demasiados pasos humanos para un trabajo que ya se conoce.",
+      "body": [
+        "Los equipos copian datos, clasifican documentos, reconcilian estados y empujan flujos que el sistema debería cerrar solo. El costo no es solo tiempo. Es error, retraso y personas atadas a una tarea que no decide nada.",
+        "La IA entra después, y solo si hay una decisión, una clasificación o una transformación donde un modelo aporta más que una regla. Si no, se automatiza el flujo y se dice que no hace falta un modelo."
+      ]
+    },
+    "does": {
+      "eyebrow": "Qué hace BRILER",
+      "title": "Primero el trabajo. Después, si cabe, la inteligencia.",
+      "body": [
+        "Mapeamos el proceso, quitamos repetición y conectamos los sistemas que el flujo necesita. Donde un modelo mejora una decisión o una clasificación, lo integramos al workflow. Donde no, no lo inventamos.",
+        "La evidencia pública que tenemos hoy muestra automatización e integración. No convertimos esos casos en proyectos de IA."
+      ]
+    },
+    "capabilities": [
+      "Automatización de procesos y workflows",
+      "Orquestación entre sistemas",
+      "Clasificación y transformación de información",
+      "IA aplicada a una decisión o un proceso concreto",
+      "Asistentes cuando el flujo lo justifica",
+      "Diseño de la excepción humana"
+    ],
+    "approach": {
+      "title": "Quitar fricción antes de añadir un modelo.",
+      "steps": [
+        {
+          "label": "Ver el trabajo",
+          "body": "Qué se hace a mano, cuántas veces y sobre qué sistemas. El mapa sale del proceso, no de una demo de IA."
+        },
+        {
+          "label": "Quitar repetición",
+          "body": "Reglas, orquestación e integraciones cierran el ciclo cuando el resultado ya es determinable."
+        },
+        {
+          "label": "Aplicar inteligencia con criterio",
+          "body": "Un modelo entra si cambia una decisión, una clasificación o una operación. Si no la cambia, no se añade."
+        },
+        {
+          "label": "Dejar la excepción en personas",
+          "body": "Lo ambiguo o de alto riesgo no se esconde detrás de un modelo. Se diseña quién interviene y cuándo."
+        }
+      ]
+    },
+    "evidence": {
+      "title": "Automatización real. Sin disfrazarla de IA.",
+      "items": [
+        {
+          "slug": "hubspot-core-coopebanacio",
+          "title": "HubSpot ↔ Core financiero",
+          "reason": "Muestra orquestación, transformación e integración entre sistemas. No es un caso de inteligencia artificial, y no lo presentamos como tal."
+        }
+      ]
+    },
+    "depth": {
+      "title": "Cómo separamos automatización e inteligencia.",
+      "items": [
+        {
+          "title": "Regla frente a modelo",
+          "body": "Si el resultado se puede declarar, se automatiza. El modelo se reserva para lo que una regla no cubre bien."
+        },
+        {
+          "title": "Integración como prerrequisito",
+          "body": "Un workflow inteligente sobre sistemas que no se hablan solo crea otra isla. El intercambio va primero."
+        },
+        {
+          "title": "Evidencia honestamente limitada",
+          "body": "Hoy no publicamos un case study de IA en producción. La capacidad existe; la evidencia se mostrará cuando sea un caso real."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Siguiente conversación",
+      "title": "Si el trabajo se repite, veamos si debe seguir siendo humano.",
+      "lede": "Cuéntanos el proceso. Decidimos juntos qué se automatiza, qué se modela y qué se deja en personas."
+    }
+  },
+  "infrastructure": {
+    "meta": {
+      "title": "Arquitectura e infraestructura tecnológica para empresas | BRILER",
+      "description": "Diseñamos y modernizamos la plataforma que una solución o una organización necesita. No somos un hyperscaler ni un reseller genérico de cloud."
+    },
+    "schema": {
+      "name": "Arquitectura e infraestructura tecnológica",
+      "serviceType": "Technology architecture and infrastructure"
+    },
+    "hero": {
+      "eyebrow": "Infraestructura y arquitectura",
+      "title": "La plataforma que sostiene lo que el negocio necesita construir.",
+      "lede": "BRILER no es un hyperscaler ni un catálogo de cloud. Diseñamos, modernizamos e implementamos la base tecnológica que una solución o una organización realmente va a operar."
+    },
+    "matter": {
+      "eyebrow": "El problema",
+      "title": "El sistema crece. La base no.",
+      "body": [
+        "Hay infraestructuras que limitan el siguiente producto, bases de datos que se vuelven el cuello de botella y arquitecturas que nadie quiere tocar porque el costo de cambiarlas no está claro.",
+        "A veces hace falta cloud. A veces hace falta redibujar la plataforma antes de construir encima. En ambos casos, el problema es de arquitectura, no de un logo de proveedor."
+      ]
+    },
+    "does": {
+      "eyebrow": "Qué hace BRILER",
+      "title": "Diseñar la base para una solución, no revender una nube.",
+      "body": [
+        "Trabajamos la arquitectura, el dato, el despliegue y la operación que un sistema necesita para vivir. Si cloud es la respuesta, se implementa porque el problema la pide, no porque sea el producto de esta página.",
+        "No fabricamos partnerships ni certificaciones. La promesa es una plataforma que se puede mantener."
+      ]
+    },
+    "capabilities": [
+      "Arquitectura de sistemas y de plataforma",
+      "Cloud cuando el problema lo requiere",
+      "Bases de datos e infraestructura de datos",
+      "DevOps y despliegue",
+      "Integración de la plataforma con los sistemas que sostiene",
+      "Modernización de la base tecnológica"
+    ],
+    "approach": {
+      "title": "La plataforma se diseña para un sistema, no para un brochure.",
+      "steps": [
+        {
+          "label": "Diagnosticar la restricción",
+          "body": "Qué limita hoy el crecimiento: dato, despliegue, entorno, o una arquitectura que ya no se entiende."
+        },
+        {
+          "label": "Diseñar la plataforma",
+          "body": "Límites, ambientes, datos y operación. La nube es una opción, no el titular."
+        },
+        {
+          "label": "Implementar",
+          "body": "Se construye la base que la solución necesita y se deja lista para desplegar con rutina."
+        },
+        {
+          "label": "Dejarla operable",
+          "body": "Monitoreo, despliegue y evolución. Una infraestructura que solo el autor entiende no está terminada."
+        }
+      ]
+    },
+    "evidence": {
+      "title": "Capacidad visible. Sin un caso publicado solo de infraestructura.",
+      "empty": "Los cuatro casos públicos muestran sistemas puestos en producción. La plataforma que los sostiene forma parte de ese trabajo, pero no publicamos un case study independiente de infraestructura. No inventamos uno.",
+      "items": []
+    },
+    "depth": {
+      "title": "Lo que un CIO suele pedir cuando se habla de plataforma.",
+      "items": [
+        {
+          "title": "Arquitectura antes que proveedor",
+          "body": "Primero se decide qué debe ser estable. El cloud se elige después, si encaja."
+        },
+        {
+          "title": "Datos y cuellos de botella",
+          "body": "Muchas «fallas de infraestructura» son un modelo de datos o un camino de lectura que ya no aguanta la operación."
+        },
+        {
+          "title": "Despliegue como hábito",
+          "body": "Si poner un cambio en producción es un evento, la plataforma todavía no sostiene el sistema."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Siguiente conversación",
+      "title": "Si la base limita el siguiente sistema, empecemos por la base.",
+      "lede": "Cuéntanos qué no escala o qué no se atreve a tocar el equipo. Ahí se diseña la plataforma."
+    }
+  }
+}

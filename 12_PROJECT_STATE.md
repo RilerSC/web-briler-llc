@@ -2,7 +2,7 @@
 
 **Proyecto:** Web corporativa internacional BRILER  
 **Actualizado:** 2026-09-20  
-**Fase:** Home D2 productiva; conjunto principal de cuatro casos publicado; i18n/autodetección vigentes
+**Fase:** Home D2 productiva; cuatro casos publicados; SEO comercial V1 (cinco soluciones ES/EN) implementado
 
 ---
 
@@ -16,6 +16,7 @@
 - **Case Studies (2026-09-20):** segundo caso real publicado — AUTOGESTIÓN / Portal Asociados de COOPEBANACIO R.L.
 - **Case Studies (2026-09-20):** tercer caso real publicado — COOPEMERCADITO / Marketplace de COOPEBANACIO R.L.
 - **Case Studies (2026-09-20):** cuarto caso real publicado — HubSpot ↔ Core financiero / COOPEBANACIO R.L. Conjunto principal de cuatro casos completado.
+- **SEO comercial V1 (2026-09-20):** cinco landings de solución ES/EN, sitemap/robots, schema conservador, internal linking Home ↔ Solution ↔ Case. Consultoría permanece transversal. GA4 no forma parte de esta fase.
 
 ---
 
@@ -27,6 +28,8 @@ Home `/es` y `/en` sirven D2. Formulario y agenda operan. Autodetección inicial
 
 Case Studies inició. El conjunto principal de cuatro casos está publicado: ERP-WEB, AUTOGESTIÓN, COOPEMERCADITO y HubSpot ↔ Core financiero.
 
+La arquitectura SEO V1 está publicada: software, integración, modernización legacy, automatización/IA e infraestructura/arquitectura.
+
 ---
 
 ## Pending
@@ -34,7 +37,7 @@ Case Studies inició. El conjunto principal de cuatro casos está publicado: ERP
 - Casos adicionales fuera del conjunto principal: PENDING — autorización de Dirección
 - Verificar evidencia/métricas antes de publicar cualquier otro caso
 - Cerrar canales visibles (email, teléfono/WhatsApp, LinkedIn)
-- SEO internacional (requisito aprobado)
+- SEO: OG image / Search Console (requisito aprobado; sitemap/robots/schema V1 ya implementados)
 - GA4 y medición de funnel (requisito aprobado)
 - Información legal y de entidades
 - Permanencia o reemplazo de calendarios Koalendar
@@ -51,7 +54,7 @@ Case Studies inició. El conjunto principal de cuatro casos está publicado: ERP
 - Paquete: `briler-web@0.1.0`.
 - Tipografía: Sora + Inter + JetBrains Mono. MADE Outer Sans no se usa en runtime.
 - i18n: `localePrefix: "always"`, `localeDetection: true`, fallback `en`. Precedencia URL → cookie → `Accept-Language`.
-- Superficies productivas: home, cuatro casos COOPEBANACIO, agendar, 404, `POST /api/contact`.
+- Superficies productivas: home, cuatro casos COOPEBANACIO, cinco soluciones ES/EN, agendar, 404, `POST /api/contact`.
 - Casos: `erp-web-coopebanacio`, `autogestion-coopebanacio`, `coopemercadito-coopebanacio`, `hubspot-core-coopebanacio`. Sin CMS.
 - Prototipo D2 permanece en `public/lab/briler-d/` como referencia visual.
 - No hay CMS, blog, auth, ecommerce, portal ni analytics.
@@ -64,7 +67,7 @@ Case Studies inició. El conjunto principal de cuatro casos está publicado: ERP
 - CEO-first / pain-first.
 - Dirección visual D2.
 - Casos: estructura `Problem → Intervention → Result`; conjunto principal de cuatro casos publicado.
-- SEO y GA4 son requisitos; implementación pendiente.
+- SEO V1 de soluciones implementado; GA4 sigue pendiente.
 - Idiomas de primera clase: ES y EN, con la regla de autodetección ya implementada.
 
 ---
@@ -85,4 +88,4 @@ Case Studies inició. El conjunto principal de cuatro casos está publicado: ERP
 
 ## Next action
 
-> Dirección autoriza SEO, GA4, legal o canales. El conjunto principal de cuatro casos está cerrado.
+> Siguiente bloque previsto: GA4 + measurement/funnel. No iniciar legal, consentimiento ni Search Console en este ciclo.

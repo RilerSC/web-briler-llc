@@ -1,13 +1,16 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/navigation";
+import { SOLUTION_IDS, isLocale, solutionPath } from "@/app/lib/solutions";
 
 export default function Footer() {
   const t = useTranslations("footer");
+  const catalog = useTranslations("solutionPages.catalog");
+  const locale = useLocale();
   const year = new Date().getFullYear();
-  const solutions = t.raw("solutions.items") as string[];
   const company = t.raw("company.items") as { href: string; label: string }[];
+  const pageLocale = isLocale(locale) ? locale : "en";
 
   return (
     <footer className="foot">
@@ -29,9 +32,11 @@ export default function Footer() {
           <div className="foot__col">
             <h4>{t("solutions.title")}</h4>
             <ul>
-              {solutions.map((label) => (
-                <li key={label}>
-                  <Link href="/#solutions">{label}</Link>
+              {SOLUTION_IDS.map((id) => (
+                <li key={id}>
+                  <Link href={solutionPath(id, pageLocale)} data-solution={id}>
+                    {catalog(id)}
+                  </Link>
                 </li>
               ))}
             </ul>

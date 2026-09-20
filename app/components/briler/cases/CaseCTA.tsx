@@ -34,11 +34,11 @@ export default function CaseCTA({
             </h2>
             <p className="study-hero__lede">{lede}</p>
             <div className="study-cta__actions">
-              <Link className="btn btn--primary" href="/#contact">
+              <Link className="btn btn--primary" href="/#contact" data-cta="contact">
                 {contact}
                 <Arrow />
               </Link>
-              <Link className="btn btn--ghost" href="/agendar">
+              <Link className="btn btn--ghost" href="/agendar" data-cta="schedule">
                 {schedule}
               </Link>
             </div>

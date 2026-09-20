@@ -3,6 +3,7 @@
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/navigation";
 import { useTransition } from "react";
+import { isLocale, localizePathname } from "@/app/lib/solutions";
 
 export default function LanguageSwitcher() {
   const locale = useLocale();
@@ -11,9 +12,9 @@ export default function LanguageSwitcher() {
   const [isPending, startTransition] = useTransition();
 
   const change = (next: string) => {
-    if (next === locale) return;
+    if (next === locale || !isLocale(next)) return;
     startTransition(() => {
-      router.replace(pathname, { locale: next });
+      router.replace(localizePathname(pathname, next), { locale: next });
     });
   };
 

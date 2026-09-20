@@ -242,7 +242,7 @@ Alcance de intervención que el sitio debe poder comunicar (no IA definitiva):
 ## 6. Capacidades
 
 El portafolio no debe mostrarse como lista plana.  
-La taxonomía siguiente es **propuesta de trabajo** para la fase de arquitectura de información. No es navegación aprobada ni copy final.
+La taxonomía siguiente fue la propuesta de trabajo. La IA pública V1 ya está implementada como cinco familias de solución ES/EN (ver `11_ARCHITECTURE.md`). Consultoría permanece transversal, sin URL SEO propia.
 
 ### A. Soluciones de software
 

@@ -36,7 +36,7 @@ Sitio de marketing + una API Route.
 - Home y secciones D2 en `app/components/briler/`
 - Shell: `Navbar.tsx`, `Footer.tsx`, `LanguageSwitcher.tsx`
 - Única API: `POST /api/contact`
-- Copy productivo en `messages/es.json` y `messages/en.json` (`navbar`, `contact`, `footer`, `schedule`, `briler`, `cases`, `meta`)
+- Copy productivo en `messages/es.json` y `messages/en.json` (`navbar`, `contact`, `footer`, `schedule`, `briler`, `cases`, `meta`) más `messages/solutionPages.{es,en}.json`
 - Assets de marca runtime en `public/brand/`
 - Prototipo de referencia D2 en `public/lab/briler-d/`
 - Fuente de diseño en `design/brand/`
@@ -62,11 +62,25 @@ Prefijo obligatorio `/es` o `/en`.
 | `/{locale}/cases/autogestion-coopebanacio` | Caso AUTOGESTIÓN / COOPEBANACIO R.L. |
 | `/{locale}/cases/coopemercadito-coopebanacio` | Caso COOPEMERCADITO / COOPEBANACIO R.L. |
 | `/{locale}/cases/hubspot-core-coopebanacio` | Caso HubSpot ↔ Core financiero / COOPEBANACIO R.L. |
+| `/{locale}/soluciones/{slug}` | Landings de solución en ES |
+| `/{locale}/solutions/{slug}` | Landings de solución en EN |
 | `/{locale}/agendar` | Agendamiento (Koalendar) |
 | `/{locale}` 404 | `not-found.tsx` |
 | `/api/contact` | Envío de lead |
 
 Anclas de home: `#solutions`, `#about`, `#contact`, `#problems`, `#process`, `#evidence`.
+
+Las URLs de solución son distintas por idioma. El catálogo canónico vive en `app/lib/solutions.ts`. Un slug ES bajo `/en/...` redirige a su equivalente EN, y viceversa.
+
+| Familia | ES | EN |
+|---|---|---|
+| Software a medida | `/es/soluciones/software-a-medida` | `/en/solutions/custom-software-development` |
+| Integración de sistemas | `/es/soluciones/integracion-de-sistemas` | `/en/solutions/systems-integration` |
+| Modernización legacy | `/es/soluciones/modernizacion-sistemas-legacy` | `/en/solutions/legacy-system-modernization` |
+| Automatización e IA | `/es/soluciones/automatizacion-ia` | `/en/solutions/ai-automation` |
+| Infraestructura y arquitectura | `/es/soluciones/infraestructura-arquitectura` | `/en/solutions/cloud-infrastructure-architecture` |
+
+Consultoría tecnológica no tiene URL SEO propia en V1.
 
 Los casos viven bajo `/{locale}/cases/{slug}`. No se reutilizan las rutas legacy `/proyectos/*`. No hay CMS: copy en `messages/*.json` y componentes en `app/components/briler/cases/`.
 
@@ -74,7 +88,8 @@ Los casos viven bajo `/{locale}/cases/{slug}`. No se reutilizan las rutas legacy
 
 | Componente | Rol |
 |---|---|
-| `Navbar.tsx` | Chrome D2, skip link, LanguageSwitcher, CTA agenda |
+| `Navbar.tsx` | Chrome D2, skip link, LanguageSwitcher, CTA agenda, acceso a cinco soluciones |
+| `briler/solutions/SolutionLanding.tsx` | Landings de solución ES/EN, metadata, Service/Breadcrumb JSON-LD |
 | `LanguageSwitcher.tsx` | Cambio ES/EN (persiste `NEXT_LOCALE`) |
 | `briler/Hero.tsx` + `ResolutionField` | Apertura D2 |
 | `briler/Trust.tsx` | Logos de clientes reales, sin KPIs |
@@ -106,15 +121,20 @@ No hay analytics en código.
 
 ### SEO actual
 
-Metadata mínima BRILER en `app/[locale]/layout.tsx`: title, description, robots, Open Graph, Twitter, canonical `https://briler.net/{locale}`, alternates ES/EN.
+Metadata BRILER en `app/[locale]/layout.tsx` y por superficie: title, description, robots, Open Graph, Twitter, canonical `https://briler.net/...`, alternates ES/EN.
+
+Infraestructura V1:
+
+- `app/sitemap.ts` — home, agenda, cuatro casos y diez URLs de solución, con alternates ES/EN
+- `app/robots.ts` — `allow: /`, sitemap `https://briler.net/sitemap.xml`
+- Organization JSON-LD global
+- Service + BreadcrumbList en landings de solución (sin ratings, precios ni oficinas inventadas)
 
 No implementado:
 
-- sitemap internacional
-- `robots.ts`
-- schema exhaustivo
 - OG image
 - Search Console
+- GA4
 
 ### Sistema visual y assets
 
@@ -141,7 +161,7 @@ Estado real de deployment, dominio vivo y variables de producción: no verificad
 
 Decisiones de Dirección ya tomadas. Lo siguiente **sigue pendiente** de implementación:
 
-- SEO internacional (sitemap, hreflang programático, schema, OG)
+- OG image y Search Console
 - GA4 y medición de funnel
 - Casos BRILER adicionales: ninguno pendiente en el conjunto principal de cuatro
 - Superficies legales
@@ -154,6 +174,7 @@ Ya implementado respecto al target original:
 - Autodetección ES/EN con precedencia URL → cookie → navegador
 - Metadata mínima BRILER / `briler.net`
 - Cleanup DEVIT506 de superficies productivas y residuos confirmados
+- SEO comercial V1: cinco soluciones ES/EN, sitemap, robots, schema conservador
 
 ### Experiencia comercial vigente
 

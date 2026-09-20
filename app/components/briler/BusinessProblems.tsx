@@ -1,15 +1,20 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { drawProblemWire } from "@/app/lib/briler-figures";
+import { isLocale, solutionPath, type SolutionId } from "@/app/lib/solutions";
 import { prefersReducedMotion } from "@/app/lib/briler-geom";
+import { Link } from "@/navigation";
+import Arrow from "./Arrow";
 import Reveal from "./Reveal";
 
-type Problem = { q: string; k: string; t: string; b: string; tags: string[] };
+type Problem = { q: string; k: string; t: string; b: string; tags: string[]; family?: SolutionId };
 
 export default function BusinessProblems() {
   const t = useTranslations("briler.problems");
+  const locale = useLocale();
+  const pageLocale = isLocale(locale) ? locale : "en";
   const items = t.raw("items") as Problem[];
   const [active, setActive] = useState(0);
   const listRef = useRef<HTMLDivElement>(null);
@@ -108,6 +113,19 @@ export default function BusinessProblems() {
                   <li key={tag}>{tag}</li>
                 ))}
               </ul>
+              {p.family ? (
+                <p className="prob__go">
+                  <Link
+                    href={solutionPath(p.family, pageLocale)}
+                    className="tlink"
+                    data-surface="home-problem"
+                    data-solution={p.family}
+                  >
+                    {t("go")}
+                    <Arrow />
+                  </Link>
+                </p>
+              ) : null}
             </div>
           </div>
         </Reveal>

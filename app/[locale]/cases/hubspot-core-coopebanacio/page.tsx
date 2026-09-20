@@ -8,6 +8,7 @@ import BridgeHero from "../../../components/briler/cases/BridgeHero";
 import BridgeLayer from "../../../components/briler/cases/BridgeLayer";
 import CapabilityField from "../../../components/briler/cases/CapabilityField";
 import CaseCTA from "../../../components/briler/cases/CaseCTA";
+import CaseRelatedSolutions from "../../../components/briler/cases/CaseRelatedSolutions";
 import CaseVizDefs from "../../../components/briler/cases/CaseVizDefs";
 import ControlledAuto from "../../../components/briler/cases/ControlledAuto";
 import DomainMapping from "../../../components/briler/cases/DomainMapping";
@@ -160,6 +161,8 @@ export default async function HubspotCoreCasePage({
         lede={t("capabilities.lede")}
         items={demonstrated}
       />
+
+      <CaseRelatedSolutions caseSlug="hubspot-core-coopebanacio" locale={locale} />
 
       <CaseCTA
         eyebrow={t("cta.eyebrow")}

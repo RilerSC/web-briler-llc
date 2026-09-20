@@ -5,6 +5,7 @@ import Arrow from "../../../components/briler/Arrow";
 import ArchitectureField from "../../../components/briler/cases/ArchitectureField";
 import CapabilityField from "../../../components/briler/cases/CapabilityField";
 import CaseCTA from "../../../components/briler/cases/CaseCTA";
+import CaseRelatedSolutions from "../../../components/briler/cases/CaseRelatedSolutions";
 import CaseHero from "../../../components/briler/cases/CaseHero";
 import CaseSnapshot from "../../../components/briler/cases/CaseSnapshot";
 import CaseVizDefs from "../../../components/briler/cases/CaseVizDefs";
@@ -159,6 +160,8 @@ export default async function ErpWebCasePage({
         lede={t("capabilities.lede")}
         items={demonstrated}
       />
+
+      <CaseRelatedSolutions caseSlug="erp-web-coopebanacio" locale={locale} />
 
       <CaseCTA
         eyebrow={t("cta.eyebrow")}

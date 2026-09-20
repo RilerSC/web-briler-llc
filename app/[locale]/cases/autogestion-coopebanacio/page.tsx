@@ -4,6 +4,7 @@ import { Link } from "@/navigation";
 import Arrow from "../../../components/briler/Arrow";
 import CapabilityField from "../../../components/briler/cases/CapabilityField";
 import CaseCTA from "../../../components/briler/cases/CaseCTA";
+import CaseRelatedSolutions from "../../../components/briler/cases/CaseRelatedSolutions";
 import CaseVizDefs from "../../../components/briler/cases/CaseVizDefs";
 import ChannelArch from "../../../components/briler/cases/ChannelArch";
 import ChannelHero from "../../../components/briler/cases/ChannelHero";
@@ -151,6 +152,8 @@ export default async function AutogestionCasePage({
         lede={t("capabilities.lede")}
         items={demonstrated}
       />
+
+      <CaseRelatedSolutions caseSlug="autogestion-coopebanacio" locale={locale} />
 
       <CaseCTA
         eyebrow={t("cta.eyebrow")}

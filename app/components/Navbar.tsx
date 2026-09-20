@@ -1,12 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/navigation";
+import { SOLUTION_IDS, isLocale, solutionPath } from "@/app/lib/solutions";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar() {
   const t = useTranslations("navbar");
+  const catalog = useTranslations("solutionPages.catalog");
+  const locale = useLocale();
+  const pageLocale = isLocale(locale) ? locale : "en";
   const [stuck, setStuck] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -38,9 +42,20 @@ export default function Navbar() {
         </Link>
 
         <nav className="nav__links" aria-label={t("primary")}>
-          <Link className="nav__link" href="/#solutions">
-            {t("solutions")}
-          </Link>
+          <div className="nav__group">
+            <Link className="nav__link" href="/#solutions">
+              {t("solutions")}
+            </Link>
+            <ul className="nav__sub">
+              {SOLUTION_IDS.map((id) => (
+                <li key={id}>
+                  <Link href={solutionPath(id, pageLocale)} data-solution={id}>
+                    {catalog(id)}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
           <Link className="nav__link" href="/#about">
             {t("about")}
           </Link>
@@ -74,6 +89,15 @@ export default function Navbar() {
             <span className="mnav__i">01</span>
             {t("solutions")}
           </Link>
+          <ul className="mnav__sub">
+            {SOLUTION_IDS.map((id) => (
+              <li key={id}>
+                <Link href={solutionPath(id, pageLocale)} onClick={close} data-solution={id}>
+                  {catalog(id)}
+                </Link>
+              </li>
+            ))}
+          </ul>
           <Link href="/#about" onClick={close}>
             <span className="mnav__i">02</span>
             {t("about")}
