@@ -4,6 +4,9 @@ node_modules/
 # build
 dist/
 .vercel/
+.next/
+out/
+*.tsbuildinfo
 
 # astro
 .astro/
@@ -22,6 +25,10 @@ Thumbs.db
 *.swo
 .vscode/
 .idea/
+.cursor/
 
 # debug
 npm-debug.log*
+
+# superdesign temp templates
+.superdesign/tmp/

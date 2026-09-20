@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "targets": {
+    "/briler-home-concepts": {
+      "targetKind": "new-target",
+      "projectId": "96ff176e-af43-4c9a-ad78-24e625f26f5f",
+      "activeDraftId": "3b2e2c7f-8cee-4232-8e79-23b8e79971c8",
+      "designSystemPath": ".superdesign/design-system.md",
+      "referenceIds": [
+        "2b10cb45-f6d6-48ad-9ccb-3e5b7404ba83",
+        "57f0c7b7-7729-43dd-9118-f646caf46c19",
+        "2e109827-5222-4687-8a0b-41bce74e44ab",
+        "d89649fe-12f7-4036-8b05-8aea83b3abaa",
+        "be5f6d7e-574f-4491-a86e-1a67b108faa4",
+        "c10169b5-b011-4992-8d89-8245cf1c4436"
+      ],
+      "contextFiles": [
+        ".superdesign/design-system.md",
+        ".superdesign/init/theme.md"
+      ],
+      "fingerprints": {
+        ".superdesign/design-system.md": "5c4731edef6e6e51f0323958d13a42e6f2afd5bbc8e525c9615b661dbb075caa",
+        ".superdesign/init/theme.md": "804706182048fac972257391b3093a6ea66aa3779a5bdf45ab79d330c435d609"
+      },
+      "components": [],
+      "drafts": {
+        "3b2e2c7f-8cee-4232-8e79-23b8e79971c8": {
+          "title": "A — Executive / Architectural",
+          "visualDirection": "executive-architectural",
+          "currentVersion": 1,
+          "model": "gpt-5.5"
+        },
+        "6a43a8b1-eb85-44c5-8a0f-a73e60187499": {
+          "title": "B — Engineering / Systems",
+          "visualDirection": "engineering-systems",
+          "currentVersion": 1,
+          "model": "grok-4.5"
+        },
+        "78c64ea2-751d-4d6c-a2c9-51f974c2c6ab": {
+          "title": "C — Premium Technology / Spatial",
+          "visualDirection": "premium-spatial",
+          "currentVersion": 1,
+          "model": "gemini-3.1-pro"
+        }
+      },
+      "notes": "Dedicated Concept C mobile draft blocked by insufficient Superdesign credits. A and B include in-page 390px first-screen frames.",
+      "updatedAt": "2026-09-20T01:22:00.000Z"
+    }
+  }
+}

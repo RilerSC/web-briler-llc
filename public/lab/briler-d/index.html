@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>BRILER — Visual Direction D · Intelligent Systems</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./briler-d.css" />
+    <link rel="icon" href="./assets/brand/briler-isotype.png" />
+  </head>
+
+  <body>
+    <a class="sr" href="#main">Skip to content</a>
+
+    <!-- ===================== 1. NAVIGATION ===================== -->
+    <header class="nav" id="nav">
+      <div class="wrap nav__in">
+        <a class="nav__logo" href="#top" aria-label="BRILER — home">
+          <img src="./assets/brand/briler-lockup-gradient.png" alt="BRILER" width="343" height="120" />
+        </a>
+
+        <nav class="nav__links" aria-label="Primary">
+          <a class="nav__link" href="#solutions">Solutions</a>
+          <a class="nav__link" href="#cases">Case Studies</a>
+          <a class="nav__link" href="#about">About</a>
+          <a class="nav__link" href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav__right">
+          <div class="lang" role="group" aria-label="Language">
+            <button type="button" aria-pressed="false">ES</button>
+            <button type="button" aria-pressed="true">EN</button>
+          </div>
+          <a class="btn btn--ghost btn--sm nav__cta" href="#contact">Schedule a conversation</a>
+          <button
+            class="burger"
+            id="burger"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileNav"
+          >
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile navigation keeps the same routes and the same CTA weight. -->
+      <div class="mnav" id="mobileNav" hidden>
+        <nav class="wrap mnav__in" aria-label="Mobile">
+          <a href="#solutions"><span class="mnav__i">01</span>Solutions</a>
+          <a href="#cases"><span class="mnav__i">02</span>Case Studies</a>
+          <a href="#about"><span class="mnav__i">03</span>About</a>
+          <a href="#contact"><span class="mnav__i">04</span>Contact</a>
+          <a class="btn btn--primary mnav__cta" href="#contact">
+            Schedule a conversation
+            <svg class="btn__arrow" width="15" height="10" viewBox="0 0 15 10" fill="none" aria-hidden="true">
+              <path d="M0 5h13M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.4" />
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ===================== 2. HERO ===================== -->
+      <section class="hero" id="top">
+        <div class="hero__field" aria-hidden="true">
+          <canvas id="field"></canvas>
+        </div>
+        <div class="hero__veil" aria-hidden="true"></div>
+
+        <div class="wrap hero__in">
+          <div class="hero__copy">
+            <p class="eyebrow">Technology &amp; engineering company</p>
+
+            <h1>Technology designed around <em>your business</em>.</h1>
+
+            <p class="hero__sub">
+              We design, develop and integrate technology solutions that help businesses grow,
+              modernize and operate better.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contact">
+                Tell us what you need
+                <svg class="btn__arrow" width="15" height="10" viewBox="0 0 15 10" fill="none" aria-hidden="true">
+                  <path d="M0 5h13M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.4" />
+                </svg>
+              </a>
+              <a class="btn btn--ghost" href="#solutions">Explore our solutions</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrap hero__foot">
+          <ul class="hero__caps">
+            <li>Software</li>
+            <li>Automation</li>
+            <li>AI</li>
+            <li>Integration</li>
+            <li>Cloud</li>
+            <li>Data</li>
+            <li>Consulting</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===================== 3. TRUST ===================== -->
+      <section class="sec sec--tight sec--plinth" data-ch="02" aria-labelledby="trust-h">
+        <div class="wrap trust">
+          <div class="trust__layout">
+            <div class="rv">
+              <p class="eyebrow">Evidence</p>
+              <h2 class="trust__h" id="trust-h">Companies that have trusted our work</h2>
+              <p style="margin-top: 26px">
+                <a class="tlink" href="#cases">
+                  Read the case studies
+                  <svg width="15" height="10" viewBox="0 0 15 10" fill="none" aria-hidden="true">
+                    <path d="M0 5h13M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.4" />
+                  </svg>
+                </a>
+              </p>
+            </div>
+
+            <!-- Marks are trimmed to their artwork and scaled inversely to their
+                 aspect ratio so wide and square logos carry the same weight. -->
+            <ul class="trust__grid rv" style="--d: 100ms">
+              <li class="trust__cell"><img style="--opt: 1" src="./assets/clients/coopebanacio.png" alt="Coopebanacio R.L." loading="lazy" /></li>
+              <li class="trust__cell"><img style="--opt: 0.88" src="./assets/clients/fundepos.png" alt="Universidad FUNDEPOS" loading="lazy" /></li>
+              <li class="trust__cell"><img style="--opt: 1.28" src="./assets/clients/cenecoop.png" alt="CENECOOP" loading="lazy" /></li>
+              <li class="trust__cell"><img style="--opt: 0.72" src="./assets/clients/coopecobana.png" alt="COOPECOBANA" loading="lazy" /></li>
+              <li class="trust__cell"><img style="--opt: 1.45" src="../../clientes/Observatorio%20de%20Sostenibilidad.svg" alt="Observatorio de Sostenibilidad" loading="lazy" /></li>
+              <li class="trust__cell"><img style="--opt: 1.22" src="./assets/clients/creative-hut.png" alt="Creative Hut" loading="lazy" /></li>
+              <li class="trust__cell"><img style="--opt: 0.78" src="./assets/clients/guanaco.png" alt="Guanaco" loading="lazy" /></li>
+              <li class="trust__cell"><img style="--opt: 1.45" src="./assets/clients/rey-velas.png" alt="Rey Velas" loading="lazy" /></li>
+              <li class="trust__cell"><img style="--opt: 1.38" src="./assets/clients/pasitos-de-bebe.png" alt="Pasitos de Bebé" loading="lazy" /></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== 4. BUSINESS PROBLEMS ===================== -->
+      <section class="sec sec--air" id="problems" data-ch="03" aria-labelledby="prob-h">
+        <div class="wrap">
+          <div class="sec__head sec__head--split">
+            <div class="rv">
+              <p class="eyebrow">Start here</p>
+              <h2 class="h2" id="prob-h" style="margin-top: 22px">What does your business need to solve?</h2>
+            </div>
+            <p class="lede rv" style="--d: 90ms">
+              Every engagement starts from a business problem, not from a technology. Select the one
+              that sounds like yours and follow where it routes.
+            </p>
+          </div>
+
+          <div class="prob__layout rv" style="--d: 120ms">
+            <div class="prob__list" id="probList" role="tablist" aria-label="Business problems"></div>
+
+            <div class="prob__wire" aria-hidden="true">
+              <svg id="probWire" preserveAspectRatio="none"></svg>
+            </div>
+
+            <div class="prob__panel" id="probPanel" role="tabpanel" aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== 5. SOLUTIONS ===================== -->
+      <section class="sec sec--deck rule" id="solutions" data-ch="04" aria-labelledby="sol-h">
+        <div class="wrap">
+          <div class="sec__head sec__head--split">
+            <div class="rv">
+              <p class="eyebrow">Solutions</p>
+              <h2 class="h2" id="sol-h" style="margin-top: 22px">Three ways we build.<br />Two ways we sustain.</h2>
+            </div>
+            <p class="lede rv" style="--d: 90ms">
+              Most engagements are delivered through one of three primary practices. Infrastructure
+              and consulting run underneath them, supporting everything we put into production.
+            </p>
+          </div>
+
+          <div class="sol__primary rv" style="--d: 110ms">
+            <article class="sol">
+              <span class="sol__i">P—01</span>
+              <div class="sol__fig" data-fig="build"></div>
+              <h3>Custom Software Development</h3>
+              <ul class="sol__items">
+                <li>Custom business software</li>
+                <li>Enterprise systems</li>
+                <li>Web applications</li>
+                <li>Mobile applications</li>
+                <li>Digital platforms</li>
+              </ul>
+            </article>
+
+            <article class="sol">
+              <span class="sol__i">P—02</span>
+              <div class="sol__fig" data-fig="auto"></div>
+              <h3>Automation &amp; Applied AI</h3>
+              <ul class="sol__items">
+                <li>Business process automation</li>
+                <li>Workflow automation</li>
+                <li>Applied AI</li>
+                <li>Assistants and agents where appropriate</li>
+                <li>Data and document automation</li>
+              </ul>
+            </article>
+
+            <article class="sol">
+              <span class="sol__i">P—03</span>
+              <div class="sol__fig" data-fig="integrate"></div>
+              <h3>Systems Integration</h3>
+              <ul class="sol__items">
+                <li>ERP and CRM</li>
+                <li>APIs and databases</li>
+                <li>Legacy systems</li>
+                <li>Modernization</li>
+                <li>Migration</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="sol__supporting rv" style="--d: 150ms">
+            <div class="sup">
+              <span class="sup__i">S—01</span>
+              <span class="sup__t">Infrastructure, Cloud &amp; Data</span>
+              <span class="sup__d">Cloud environments, databases, pipelines and the operational foundation the systems above run on.</span>
+            </div>
+            <div class="sup">
+              <span class="sup__i">S—02</span>
+              <span class="sup__t">Technology Consulting</span>
+              <span class="sup__d">Architecture, technical direction and decisions taken before anything gets built.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== 6. CASE STUDIES ===================== -->
+      <section class="sec sec--air rule" id="cases" data-ch="05" aria-labelledby="case-h">
+        <div class="wrap">
+          <div class="sec__head sec__head--split">
+            <div class="rv">
+              <p class="eyebrow">Case studies</p>
+              <h2 class="h2" id="case-h" style="margin-top: 22px">Problem, intervention, result.</h2>
+            </div>
+            <p class="lede rv" style="--d: 90ms">
+              Engineering work in production for cooperatives, universities and enterprise operations
+              in Costa Rica.
+            </p>
+          </div>
+
+          <div class="cases">
+            <article class="case rv">
+              <div class="case__top">
+                <span class="case__n">01</span>
+                <div>
+                  <p class="case__client">Coopebanacio R.L.</p>
+                  <h3>Cooperative transactional marketplace</h3>
+                </div>
+                <div class="case__tags"><span>E-commerce · Fintech</span><span>2026</span></div>
+              </div>
+              <div class="case__body">
+                <div class="case__step">
+                  <h4>Problem</h4>
+                  <p>
+                    Members were transacting with each other outside the cooperative, with no
+                    institutional digital channel and strict national data-protection requirements
+                    to satisfy.
+                  </p>
+                </div>
+                <div class="case__step">
+                  <h4>BRILER intervention</h4>
+                  <p>
+                    A hybrid architecture: an edge-delivered frontend with an Azure backend, a PostGIS
+                    geospatial engine for proximity search, and Zero-Trust access combining OAuth
+                    providers with a second-factor OTP.
+                  </p>
+                </div>
+                <div class="case__step">
+                  <h4>Result</h4>
+                  <p>
+                    A marketplace operating at sub-second edge delivery (&lt;1.2s P95) with a
+                    compliance model aligned to Costa Rica's Law 8968. Integrated payments are the
+                    phase currently in progress.
+                  </p>
+                </div>
+              </div>
+              <ul class="case__stack">
+                <li>Next.js</li><li>PostgreSQL + PostGIS</li><li>Azure</li><li>NextAuth</li><li>Redis</li><li>PWA</li>
+              </ul>
+            </article>
+
+            <article class="case rv" style="--d: 90ms">
+              <div class="case__top">
+                <span class="case__n">02</span>
+                <div>
+                  <p class="case__client">Universidad FUNDEPOS</p>
+                  <h3>Territorial Sustainability Observatory</h3>
+                </div>
+                <div class="case__tags"><span>Data platform</span><span>2026</span></div>
+              </div>
+              <div class="case__body">
+                <div class="case__step">
+                  <h4>Problem</h4>
+                  <p>
+                    There was no unified way to monitor sustainable development indicators across
+                    Costa Rican territories, and the platform had to stay usable on limited
+                    connectivity.
+                  </p>
+                </div>
+                <div class="case__step">
+                  <h4>BRILER intervention</h4>
+                  <p>
+                    A server-first platform built on Next.js 15 and React 19 Server Components, with
+                    progressive streaming for heavy technical documents and content decoupled for a
+                    later database migration.
+                  </p>
+                </div>
+                <div class="case__step">
+                  <h4>Result</h4>
+                  <p>
+                    55% less JavaScript shipped to the client and a sub-second initial load, on an
+                    architecture already prepared for Azure Big Data and analytics phases.
+                  </p>
+                </div>
+              </div>
+              <ul class="case__stack">
+                <li>Next.js 15</li><li>React 19</li><li>TypeScript</li><li>Server Components</li><li>Edge Network</li>
+              </ul>
+            </article>
+
+            <article class="case rv" style="--d: 130ms">
+              <div class="case__top">
+                <span class="case__n">03</span>
+                <div>
+                  <p class="case__client">Coopebanacio · Quarzo Sistemas</p>
+                  <h3>HubSpot CRM ↔ CODEAS ERP synchronization</h3>
+                </div>
+                <div class="case__tags"><span>Systems integration</span><span>2025</span></div>
+              </div>
+              <div class="case__body">
+                <div class="case__step">
+                  <h4>Problem</h4>
+                  <p>
+                    Commercial data lived in HubSpot while financial and operational data lived in a
+                    CODEAS ERP on MS SQL Server, forcing manual double entry and hiding the real state
+                    of the pipeline.
+                  </p>
+                </div>
+                <div class="case__step">
+                  <h4>BRILER intervention</h4>
+                  <p>
+                    A bidirectional synchronization engine in Python that maps 260+ custom properties,
+                    writes in batches with integrity guarantees, and handles rate limiting adaptively.
+                  </p>
+                </div>
+                <div class="case__step">
+                  <h4>Result</h4>
+                  <p>
+                    Over 10,000 records synchronized on a scheduled run, with a 100% success rate on
+                    custom-property writes and 50% faster execution than the prior approach.
+                  </p>
+                </div>
+              </div>
+              <ul class="case__stack">
+                <li>Python 3.13</li><li>HubSpot REST API</li><li>MS SQL Server</li><li>pyodbc</li><li>Task Scheduler</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== 7. HOW BRILER WORKS ===================== -->
+      <section class="sec sec--deck rule" id="process" data-ch="06" aria-labelledby="proc-h">
+        <div class="wrap">
+          <div class="sec__head sec__head--split">
+            <div class="rv">
+              <p class="eyebrow">How BRILER works</p>
+              <h2 class="h2" id="proc-h" style="margin-top: 22px">From ambiguity to a system in production.</h2>
+            </div>
+            <p class="lede rv" style="--d: 90ms">
+              One continuous movement. Scattered requirements become an architecture, the architecture
+              becomes an engineered system, and the system reaches production.
+            </p>
+          </div>
+
+          <div class="track rv" style="--d: 110ms">
+            <svg class="track__svg" id="track" preserveAspectRatio="none" aria-hidden="true"></svg>
+            <ol class="track__labels">
+              <li>
+                <span class="track__n">01</span><span class="track__t">Understand</span>
+                <p class="track__d">We start from the business problem and what it actually costs.</p>
+              </li>
+              <li>
+                <span class="track__n">02</span><span class="track__t">Design</span>
+                <p class="track__d">Scope, architecture and the decisions that constrain the build.</p>
+              </li>
+              <li>
+                <span class="track__n">03</span><span class="track__t">Build</span>
+                <p class="track__d">Engineering, integration and the work of making it hold together.</p>
+              </li>
+              <li>
+                <span class="track__n">04</span><span class="track__t">Take to production</span>
+                <p class="track__d">Deployment, operation and the handover into real use.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== 8. TECHNICAL DEPTH ===================== -->
+      <section class="sec sec--tight sec--plinth" id="depth" data-ch="07" aria-labelledby="depth-h">
+        <div class="wrap">
+          <div class="sec__head sec__head--split">
+            <div class="rv">
+              <p class="eyebrow">Technical depth</p>
+              <h2 class="h2" id="depth-h" style="margin-top: 22px">One ecosystem. Twelve domains.</h2>
+            </div>
+            <p class="lede rv" style="--d: 90ms">
+              These are not separate service lines. They are the parts of a single system that we
+              design, connect and operate together.
+            </p>
+          </div>
+
+          <div class="depth__wrap rv" style="--d: 110ms">
+            <div class="depth">
+              <div class="cap cap--2"><span class="cap__i">01</span><span class="cap__n">Software</span></div>
+              <div class="cap"><span class="cap__i">02</span><span class="cap__n">APIs</span></div>
+              <div class="cap"><span class="cap__i">03</span><span class="cap__n">ERP</span></div>
+              <div class="cap cap--2"><span class="cap__i">04</span><span class="cap__n">AI</span></div>
+
+              <div class="cap"><span class="cap__i">05</span><span class="cap__n">Cloud</span></div>
+              <div class="cap cap--2"><span class="cap__i">06</span><span class="cap__n">Databases</span></div>
+              <div class="cap cap--2"><span class="cap__i">07</span><span class="cap__n">Integration</span></div>
+              <div class="cap"><span class="cap__i">08</span><span class="cap__n">Automation</span></div>
+
+              <div class="cap cap--2"><span class="cap__i">09</span><span class="cap__n">DevOps</span></div>
+              <div class="cap"><span class="cap__i">10</span><span class="cap__n">Legacy</span></div>
+              <div class="cap"><span class="cap__i">11</span><span class="cap__n">Mobile</span></div>
+              <div class="cap cap--2"><span class="cap__i">12</span><span class="cap__n">Architecture</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== 9. ABOUT ===================== -->
+      <section class="sec sec--air about" id="about" data-ch="08" aria-labelledby="about-h">
+        <img class="about__mark" src="./assets/brand/briler-isotype.png" alt="" aria-hidden="true" />
+        <div class="wrap about__in rv">
+          <p class="eyebrow">About BRILER</p>
+          <h2 id="about-h">Technology with business vision and engineering depth.</h2>
+          <p class="lede">
+            BRILER combines engineering, consulting and technology infrastructure to solve real
+            business needs, from Costa Rica to the United States and Spain.
+          </p>
+          <p style="margin-top: 34px">
+            <a class="tlink" href="#">
+              About BRILER
+              <svg width="15" height="10" viewBox="0 0 15 10" fill="none" aria-hidden="true">
+                <path d="M0 5h13M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.4" />
+              </svg>
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <!-- ===================== 10. FINAL CTA ===================== -->
+      <section class="sec sec--air final" id="contact" data-ch="09" aria-labelledby="cta-h">
+        <svg class="final__svg" id="converge" preserveAspectRatio="none" aria-hidden="true"></svg>
+        <div class="wrap final__in rv">
+          <p class="eyebrow">Let's talk</p>
+          <h2 id="cta-h">What does your business need to solve?</h2>
+          <p class="lede">
+            Tell us the problem. We'll help determine the technology needed to solve it.
+          </p>
+          <div class="final__actions">
+            <a class="btn btn--primary" href="#contact">
+              Let's talk about your project
+              <svg class="btn__arrow" width="15" height="10" viewBox="0 0 15 10" fill="none" aria-hidden="true">
+                <path d="M0 5h13M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.4" />
+              </svg>
+            </a>
+            <a class="btn btn--ghost" href="#contact">Schedule a conversation</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== 11. FOOTER ===================== -->
+    <footer class="foot">
+      <div class="wrap">
+        <div class="foot__grid">
+          <div>
+            <div class="foot__logo">
+              <img src="./assets/brand/briler-lockup-white.png" alt="BRILER" width="343" height="120" />
+            </div>
+            <p class="foot__tag">
+              We design, develop and integrate technology solutions around real business needs.
+            </p>
+            <ul class="presence">
+              <li>Costa Rica</li>
+              <li>United States</li>
+              <li>Spain</li>
+            </ul>
+          </div>
+
+          <div class="foot__col">
+            <h4>Solutions</h4>
+            <ul>
+              <li><a href="#solutions">Custom Software Development</a></li>
+              <li><a href="#solutions">Automation &amp; Applied AI</a></li>
+              <li><a href="#solutions">Systems Integration</a></li>
+              <li><a href="#solutions">Infrastructure, Cloud &amp; Data</a></li>
+              <li><a href="#solutions">Technology Consulting</a></li>
+            </ul>
+          </div>
+
+          <div class="foot__col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About BRILER</a></li>
+              <li><a href="#cases">Case Studies</a></li>
+              <li><a href="#process">How we work</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="foot__col">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="https://briler.net">briler.net</a></li>
+              <li><a href="#contact">Schedule a conversation</a></li>
+              <li><span class="slot">Email</span></li>
+              <li><span class="slot">Phone / WhatsApp</span></li>
+              <li><span class="slot">LinkedIn</span></li>
+            </ul>
+            <p class="foot__pending">Channels reserved — values pending definition.</p>
+          </div>
+        </div>
+
+        <div class="foot__bar">
+          <span>© <span id="yr">2026</span> BRILER. All rights reserved.</span>
+          <nav aria-label="Legal">
+            <a href="#">Privacy</a>
+            <a href="#">Cookies</a>
+            <a href="#">Legal notice</a>
+            <a href="#">ES / EN</a>
+          </nav>
+        </div>
+
+        <p class="foot__note">
+          Internal visual exploration — Direction D · Intelligent Systems. Not the production site.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./briler-d.js"></script>
+  </body>
+</html>

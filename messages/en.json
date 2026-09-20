@@ -1,0 +1,926 @@
+{
+  "navbar": {
+    "solutions": "Solutions",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Schedule a conversation",
+    "skip": "Skip to content",
+    "primary": "Primary",
+    "mobile": "Mobile",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "contact": {
+    "form": {
+      "name": {
+        "label": "Full Name",
+        "placeholder": "Enter your full name"
+      },
+      "company": {
+        "label": "Company",
+        "placeholder": "What is your company name?"
+      },
+      "email": {
+        "label": "Corporate Email",
+        "placeholder": "Enter your email, it's important for us to reach you"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "8888 8888",
+        "hint": "Optional - We'll contact you through this channel if needed"
+      },
+      "contactPreference": {
+        "label": "How do you prefer we contact you?",
+        "email": "Email",
+        "phone": "Phone"
+      },
+      "language": {
+        "label": "Language preference",
+        "spanish": "Español",
+        "english": "English"
+      },
+      "challenge": {
+        "label": "Technology Challenge",
+        "placeholder": "Tell us about your project, technology challenge, or strategic consulting needs..."
+      },
+      "countrySearch": {
+        "placeholder": "Search country...",
+        "noResults": "No countries found"
+      },
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "privacyNotice": "By sending this form you accept that BRILER stores your data to contact you. We do not share your information with third parties."
+    }
+  },
+  "footer": {
+    "tagline": "We design, develop and integrate technology solutions around real business needs.",
+    "presence": {
+      "cr": "Costa Rica",
+      "us": "United States",
+      "es": "Spain"
+    },
+    "solutions": {
+      "title": "Solutions",
+      "items": [
+        "Custom Software Development",
+        "Automation & Applied AI",
+        "Systems Integration",
+        "Infrastructure, Cloud & Data",
+        "Technology Consulting"
+      ]
+    },
+    "company": {
+      "title": "Company",
+      "items": [
+        {
+          "href": "/#about",
+          "label": "About BRILER"
+        },
+        {
+          "href": "/#process",
+          "label": "How we work"
+        },
+        {
+          "href": "/#evidence",
+          "label": "Case studies"
+        },
+        {
+          "href": "/#contact",
+          "label": "Contact"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "schedule": "Schedule a conversation",
+      "email": "Email",
+      "phone": "Phone / WhatsApp",
+      "pending": "Direct channels reserved — values pending definition."
+    },
+    "legal": {
+      "copyright": "© {year} BRILER. All rights reserved.",
+      "privacy": "Privacy",
+      "cookies": "Cookies",
+      "notice": "Legal notice",
+      "nav": "Legal"
+    }
+  },
+  "schedule": {
+    "meta": {
+      "title": "Schedule a conversation | BRILER",
+      "description": "Schedule a conversation with BRILER about the problem your business needs to solve."
+    },
+    "hero": {
+      "badge": "A conversation, not a pitch",
+      "title": "Let's talk about your",
+      "titleHighlight": "business problem",
+      "subtitle": "Schedule a 30-minute conversation. No commitment. We start from what you need to solve.",
+      "features": [
+        "30-minute session",
+        "Initial reading of the business problem",
+        "A clear next step",
+        "No cost and no commitment"
+      ]
+    },
+    "loading": "Loading calendar…",
+    "backToHome": "Back to home"
+  },
+  "briler": {
+    "hero": {
+      "eyebrow": "Technology & engineering company",
+      "titleBefore": "Technology designed around",
+      "titleAccent": "your business",
+      "titleAfter": ".",
+      "sub": "We design, develop and integrate technology solutions that help businesses grow, modernize and operate better.",
+      "ctaPrimary": "Tell us what you need",
+      "ctaSecondary": "Explore our solutions",
+      "caps": [
+        "Software",
+        "Automation",
+        "AI",
+        "Integration",
+        "Cloud",
+        "Data",
+        "Consulting"
+      ]
+    },
+    "trust": {
+      "eyebrow": "Evidence",
+      "title": "Companies that have trusted our work"
+    },
+    "problems": {
+      "eyebrow": "Start here",
+      "title": "What does your business need to solve?",
+      "lede": "Every engagement starts from a business problem, not from a technology. Select the one that sounds like yours and follow where it routes.",
+      "listLabel": "Business problems",
+      "items": [
+        {
+          "q": "We need to build something new.",
+          "k": "Route — Custom software",
+          "t": "From an idea to a product in production",
+          "b": "We turn the intent into a defined scope, a technical architecture and a system that actually ships. Web, mobile or an internal platform, engineered to be maintained after launch.",
+          "tags": [
+            "Product architecture",
+            "Web",
+            "Mobile",
+            "Platforms"
+          ]
+        },
+        {
+          "q": "We need to automate processes.",
+          "k": "Route — Automation",
+          "t": "Manual operations turned into workflows",
+          "b": "We map how the work is done today, find the steps that cost the most, and replace them with automated workflows across the systems your teams already use.",
+          "tags": [
+            "Process automation",
+            "Workflows",
+            "Documents",
+            "Data"
+          ]
+        },
+        {
+          "q": "Our systems don't communicate.",
+          "k": "Route — Integration",
+          "t": "One ecosystem instead of separate tools",
+          "b": "We connect ERP, CRM, databases and third-party services so information moves once and stays consistent, removing double entry and the reporting gaps that come with it.",
+          "tags": [
+            "ERP",
+            "CRM",
+            "APIs",
+            "Databases"
+          ]
+        },
+        {
+          "q": "Our technology needs to evolve.",
+          "k": "Route — Modernization",
+          "t": "Legacy systems brought forward safely",
+          "b": "We assess what must be preserved and what should be rebuilt, then modernize or migrate in stages so the business keeps operating while the platform changes underneath it.",
+          "tags": [
+            "Legacy",
+            "Migration",
+            "Re-architecture",
+            "Cloud"
+          ]
+        },
+        {
+          "q": "We want to apply AI where it actually creates value.",
+          "k": "Route — Applied AI",
+          "t": "AI applied to a specific business problem",
+          "b": "We start from the process, not the model. Where AI genuinely helps, we build it into the workflow — document and data automation, assistants and agents — and where it does not, we say so.",
+          "tags": [
+            "Applied AI",
+            "Assistants",
+            "Agents",
+            "Document automation"
+          ]
+        },
+        {
+          "q": "Our infrastructure needs to improve.",
+          "k": "Route — Infrastructure",
+          "t": "A foundation that holds under real load",
+          "b": "Cloud environments, databases, deployment pipelines and monitoring, set up so releases are routine and the cost of running the platform is understood.",
+          "tags": [
+            "Cloud",
+            "DevOps",
+            "Databases",
+            "Monitoring"
+          ]
+        },
+        {
+          "q": "We need technology direction.",
+          "k": "Route — Consulting",
+          "t": "Decisions made before anything is built",
+          "b": "Architecture, stack evaluation and a technology roadmap tied to business priorities, so the next investment is a decision rather than a guess.",
+          "tags": [
+            "Architecture",
+            "Roadmap",
+            "Stack evaluation",
+            "Governance"
+          ]
+        }
+      ]
+    },
+    "solutions": {
+      "eyebrow": "Solutions",
+      "title": "Three ways we build. Two ways we sustain.",
+      "lede": "Most engagements are delivered through one of three primary practices. Infrastructure and consulting run underneath them, supporting everything we put into production.",
+      "primary": [
+        {
+          "title": "Custom Software Development",
+          "items": [
+            "Custom business software",
+            "Enterprise systems",
+            "Web applications",
+            "Mobile applications",
+            "Digital platforms"
+          ]
+        },
+        {
+          "title": "Automation & Applied AI",
+          "items": [
+            "Business process automation",
+            "Workflow automation",
+            "Applied AI",
+            "Assistants and agents where appropriate",
+            "Data and document automation"
+          ]
+        },
+        {
+          "title": "Systems Integration",
+          "items": [
+            "ERP and CRM",
+            "APIs and databases",
+            "Legacy systems",
+            "Modernization",
+            "Migration"
+          ]
+        }
+      ],
+      "supporting": [
+        {
+          "title": "Infrastructure, Cloud & Data",
+          "body": "Cloud environments, databases, pipelines and the operational foundation the systems above run on."
+        },
+        {
+          "title": "Technology Consulting",
+          "body": "Architecture, technical direction and decisions taken before anything gets built."
+        }
+      ]
+    },
+    "evidence": {
+      "eyebrow": "How we work in production",
+      "title": "Problem, intervention, result.",
+      "lede": "Four real cases. The same client, four different problems.",
+      "more": "",
+      "read": "Read the case",
+      "items": [
+        {
+          "n": "01",
+          "client": "COOPEBANACIO R.L.",
+          "project": "ERP-WEB",
+          "title": "Modernize a critical ERP without stopping the business.",
+          "href": "/cases/erp-web-coopebanacio",
+          "status": "Modernization in progress",
+          "tags": [
+            "Custom software",
+            "Legacy modernization",
+            "Enterprise systems"
+          ],
+          "steps": [
+            {
+              "label": "Problem",
+              "body": "Replacing an ERP that holds years of operations in a single cutover introduces risk the business cannot take all at once."
+            },
+            {
+              "label": "Intervention",
+              "body": "BRILER is building a custom ERP platform that can coexist with CODEAS while capabilities move across gradually."
+            },
+            {
+              "label": "Result",
+              "body": "A new technology foundation is in place. Modernization can advance by capability; the legacy system still covers what has not yet moved."
+            }
+          ]
+        },
+        {
+          "n": "02",
+          "client": "COOPEBANACIO R.L.",
+          "project": "AUTOGESTIÓN",
+          "title": "Bring the financial core into the member’s hands.",
+          "href": "/cases/autogestion-coopebanacio",
+          "status": "",
+          "tags": [
+            "Custom software",
+            "Applications and platforms",
+            "Systems integration"
+          ],
+          "steps": [
+            {
+              "label": "Problem",
+              "body": "Members need a digital channel. The data and the rules stay in a core that must not be exposed."
+            },
+            {
+              "label": "Intervention",
+              "body": "BRILER built a custom digital experience that orchestrates access to the core through a service layer."
+            },
+            {
+              "label": "Result",
+              "body": "Members can view and manage selected capabilities from a modern experience. The core remains the financial authority."
+            }
+          ]
+        },
+        {
+          "n": "03",
+          "client": "COOPEBANACIO R.L.",
+          "project": "COOPEMERCADITO",
+          "title": "An existing community, turned into a trusted digital marketplace.",
+          "href": "/cases/coopemercadito-coopebanacio",
+          "status": "",
+          "tags": [
+            "Custom software",
+            "Applications and platforms",
+            "Infrastructure / cloud"
+          ],
+          "steps": [
+            {
+              "label": "Problem",
+              "body": "A community of members offers goods and services. It needs its own channel to organize that supply with identity, rules, and discovery."
+            },
+            {
+              "label": "Intervention",
+              "body": "BRILER built a custom marketplace: verification to sell, listing moderation, proximity search, and contact between people."
+            },
+            {
+              "label": "Result",
+              "body": "Supply can be discovered in an institutional setting. The platform makes the meeting possible; the commercial relationship continues between people."
+            }
+          ]
+        },
+        {
+          "n": "04",
+          "client": "COOPEBANACIO R.L.",
+          "project": "HUBSPOT ↔ FINANCIAL CORE",
+          "title": "The CRM knows the relationship. The core knows the financial reality.",
+          "href": "/cases/hubspot-core-coopebanacio",
+          "status": "",
+          "tags": [
+            "Custom software",
+            "Systems integration",
+            "Data"
+          ],
+          "steps": [
+            {
+              "label": "Problem",
+              "body": "HubSpot and the core hold different parts of the business. They need to share context without becoming the same system."
+            },
+            {
+              "label": "Intervention",
+              "body": "BRILER built a custom integration: it extracts, transforms, maps, and matches people so each record moves to where it adds value."
+            },
+            {
+              "label": "Result",
+              "body": "The CRM can receive institutional context. The core can receive commercial signal. Neither replaces the other."
+            }
+          ]
+        }
+      ]
+    },
+    "process": {
+      "eyebrow": "How BRILER works",
+      "title": "From ambiguity to a system in production.",
+      "lede": "One continuous movement. Scattered requirements become an architecture, the architecture becomes an engineered system, and the system reaches production.",
+      "steps": [
+        {
+          "title": "Understand",
+          "body": "We start from the business problem and what it actually costs."
+        },
+        {
+          "title": "Design",
+          "body": "Scope, architecture and the decisions that constrain the build."
+        },
+        {
+          "title": "Build",
+          "body": "Engineering, integration and the work of making it hold together."
+        },
+        {
+          "title": "Take to production",
+          "body": "Deployment, operation and the handover into real use."
+        }
+      ]
+    },
+    "depth": {
+      "eyebrow": "Technical depth",
+      "title": "One ecosystem. Twelve domains.",
+      "lede": "These are not separate service lines. They are the parts of a single system that we design, connect and operate together.",
+      "domains": [
+        "Software",
+        "APIs",
+        "ERP",
+        "AI",
+        "Cloud",
+        "Databases",
+        "Integration",
+        "Automation",
+        "DevOps",
+        "Legacy",
+        "Mobile",
+        "Architecture"
+      ]
+    },
+    "about": {
+      "eyebrow": "About BRILER",
+      "title": "Technology with business vision and engineering depth.",
+      "lede": "BRILER combines engineering, consulting and technology infrastructure to solve real business needs, from Costa Rica to the United States and Spain."
+    },
+    "contact": {
+      "eyebrow": "Let's talk",
+      "title": "What does your business need to solve?",
+      "lede": "Tell us the problem. We'll help determine the technology needed to solve it.",
+      "schedule": "Schedule a conversation"
+    }
+  },
+  "cases": {
+    "erpWeb": {
+      "meta": {
+        "title": "ERP-WEB · COOPEBANACIO R.L. | BRILER",
+        "description": "Modernize a critical ERP without stopping the business. BRILER is building ERP-WEB for COOPEBANACIO R.L. through a progressive modernization that coexists with CODEAS."
+      },
+      "back": "Back to home",
+      "hero": {
+        "eyebrow": "Case study / Enterprise modernization",
+        "client": "COOPEBANACIO R.L.",
+        "project": "ERP-WEB",
+        "title": "Modernize a critical ERP without stopping the business.",
+        "lede": "A custom ERP platform built to evolve gradually from a legacy system, while both technology generations coexist.",
+        "status": "Modernization in progress",
+        "capabilities": [
+          "Custom software",
+          "Legacy modernization",
+          "Enterprise systems"
+        ]
+      },
+      "diagram": {
+        "caption": "Legacy system → coexistence → modern platform",
+        "legacy": "CODEAS",
+        "legacyLabel": "Legacy system",
+        "legacyCore": "Legacy core",
+        "coexist": "Coexistence",
+        "coexistLabel": "Capability by capability",
+        "transitionLayer": "Transition layer",
+        "modern": "ERP-WEB",
+        "modernLabel": "Modern platform"
+      },
+      "snapshot": {
+        "client": { "k": "Client", "v": "COOPEBANACIO R.L." },
+        "engagement": { "k": "Engagement", "v": "Enterprise modernization" },
+        "strategy": { "k": "Strategy", "v": "Progressive coexistence" },
+        "platform": { "k": "Platform", "v": "Custom ERP" },
+        "status": { "k": "Status", "v": "Modernization in progress" }
+      },
+      "lanes": {
+        "legacy": ["Existing operations", "Business rules", "Existing data"],
+        "transition": ["Encapsulated integration", "Progressive migration", "Continuity"],
+        "modern": ["Modern web platform", "Modular architecture", "New capabilities"]
+      },
+      "arch": [
+        { "layer": "Frontend", "name": "React" },
+        { "layer": "Application", "name": "ASP.NET Core" },
+        { "layer": "Data", "name": "SQL Server" },
+        { "layer": "Identity", "name": "Microsoft Entra ID" },
+        { "layer": "Legacy integration", "name": "CODEAS" },
+        { "layer": "Operations", "name": "Durable processing" },
+        { "layer": "Architecture", "name": "Modular evolution" }
+      ],
+      "resultHighlight": "Evolve without conditioning the entire transformation on a single abrupt replacement.",
+      "problem": {
+        "eyebrow": "01 / Problem",
+        "title": "A critical ERP cannot stop in order to change.",
+        "body": [
+          "COOPEBANACIO runs institutional processes on CODEAS, an ERP that holds years of rules, data and day-to-day operation.",
+          "Replacing it in a single cutover creates operational risk: too many dependencies have to be resolved at once, and the business is forced to wait on one break.",
+          "The project addresses that problem with a progressive move to a new web platform, so operations can continue while capabilities are transferred."
+        ]
+      },
+      "intervention": {
+        "eyebrow": "02 / Intervention",
+        "title": "A new platform, designed to coexist.",
+        "body": [
+          "BRILER designed an ERP architecture around COOPEBANACIO. The platform is meant to coexist with CODEAS while capabilities move across gradually.",
+          "Necessary dependencies on the legacy system are encapsulated. New functions can therefore evolve on a modern foundation without requiring a massive initial migration.",
+          "A modern platform is already in place. Among other foundations, it includes a web application, an enterprise backend, controlled integration with CODEAS, its own ERP identity, Microsoft Entra ID, SMS campaign capability, and a modular architecture ready to take on new areas over time."
+        ]
+      },
+      "result": {
+        "eyebrow": "03 / Current outcome",
+        "title": "A new foundation. Replacement is not the result.",
+        "status": "Modernization in progress",
+        "body": [
+          "The publishable result is not that CODEAS has been replaced. The result is that a new technology foundation for the ERP now exists.",
+          "Modernization can advance by capability. The legacy system can keep supporting functions that have not yet moved. New capabilities are built on a modern architecture.",
+          "The organization does not have to condition the entire transformation on a single abrupt replacement."
+        ]
+      },
+      "depth": {
+        "eyebrow": "Engineering approach",
+        "title": "Enough depth for the people who run the system.",
+        "lede": "Technology supports the story. It does not replace it. These are the traits of the platform, not an internal inventory.",
+        "items": [
+          {
+            "title": "Modern web application",
+            "body": "A React interface for the capabilities that already live on the new platform."
+          },
+          {
+            "title": "Enterprise backend",
+            "body": "Services in ASP.NET Core on a SQL Server database."
+          },
+          {
+            "title": "Identity and operations",
+            "body": "Integration with Microsoft Entra ID, and SMS campaigns as an operational capability."
+          },
+          {
+            "title": "Encapsulated integration",
+            "body": "The connection to CODEAS stays controlled so legacy and the new platform can coexist."
+          },
+          {
+            "title": "Modular architecture",
+            "body": "Prepared to take on new areas progressively, without a full redesign at every step."
+          },
+          {
+            "title": "Durable processing",
+            "body": "Operational capabilities that must complete reliably, not as short-lived one-off tasks."
+          }
+        ]
+      },
+      "capabilities": {
+        "eyebrow": "Capabilities demonstrated",
+        "title": "What this work makes visible.",
+        "lede": "The kinds of intervention this case makes visible.",
+        "items": [
+          "Custom software",
+          "Enterprise systems",
+          "Legacy modernization",
+          "Systems integration",
+          "Technology architecture"
+        ]
+      },
+      "cta": {
+        "eyebrow": "Next conversation",
+        "title": "Does your organization also need to modernize a critical system?",
+        "lede": "Tell us the problem. We start with what cannot stop.",
+        "contact": "Describe the challenge",
+        "schedule": "Schedule a conversation"
+      }
+    },
+    "autogestion": {
+      "meta": {
+        "title": "AUTOGESTIÓN · COOPEBANACIO R.L. | BRILER",
+        "description": "The financial core remains the heart. BRILER builds a custom digital experience for COOPEBANACIO R.L. that connects members to their products without exposing the core."
+      },
+      "back": "Back to home",
+      "hero": {
+        "eyebrow": "Case / Digital channel",
+        "client": "COOPEBANACIO R.L.",
+        "project": "AUTOGESTIÓN",
+        "title": "The financial core remains the heart.",
+        "titleLine": "The experience does not have to feel legacy.",
+        "lede": "A custom digital experience so members can view and manage their financial products, on an architecture connected to the institutional core."
+      },
+      "diagram": {
+        "caption": "Financial core → digital layer → member",
+        "core": "Financial core",
+        "layer": "Digital layer",
+        "member": "Member"
+      },
+      "challenge": {
+        "eyebrow": "01 / The challenge",
+        "title": "The data can live in the core. The experience does not have to.",
+        "body": [
+          "COOPEBANACIO keeps products, balances, and financial rules in an existing core. That system is the authority. It must not be exposed to the internet, and its logic must not be duplicated in the frontend.",
+          "Members still need a digital channel to view and manage selected capabilities. The architecture has to connect those two worlds without mixing them."
+        ],
+        "domains": ["Savings", "Loans", "Capital", "Investments", "Insurance"]
+      },
+      "layer": {
+        "eyebrow": "02 / The digital layer",
+        "title": "A boundary between the member and the core.",
+        "lede": "BRILER built a custom digital channel. An API controls access and orchestrates permitted operations. The browser does not talk to the core.",
+        "nodes": {
+          "member": "Member",
+          "experience": "Digital experience",
+          "service": "BRILER service layer",
+          "identity": "Digital identity",
+          "core": "Financial core"
+        },
+        "points": [
+          {
+            "k": "One API",
+            "v": "A boundary that decides what can be viewed or operated."
+          },
+          {
+            "k": "Separated duties",
+            "v": "The channel owns the experience. The core owns the finance."
+          },
+          {
+            "k": "Channel identity",
+            "v": "Access, onboarding, and passkeys live in the digital layer."
+          },
+          {
+            "k": "Core authority",
+            "v": "Products, rules, and member standing stay where they always have."
+          }
+        ]
+      },
+      "member": {
+        "eyebrow": "03 / What the member sees",
+        "title": "One experience for several financial relationships.",
+        "lede": "The channel brings inquiry and selected operations into a clear surface. It is not a window into the internal system.",
+        "surfaces": ["Savings", "Loans", "Share capital", "Severance", "Investments", "Insurance", "Digital ID"]
+      },
+      "operate": {
+        "eyebrow": "04 / Self-service",
+        "title": "Inquiry is not the limit.",
+        "lede": "The channel enables selected, controlled operations. Not every product, and not every change: only what the core’s rules authorize.",
+        "verbs": ["View", "Manage", "Update", "Operate within authorized rules"]
+      },
+      "identity": {
+        "eyebrow": "05 / Digital identity",
+        "title": "Identity belongs to the channel. Financial standing belongs to the core.",
+        "lede": "Password, onboarding, and passkeys live in the digital experience. Member standing and products are confirmed against the core.",
+        "channel": "Digital channel",
+        "channelItems": ["Access", "Onboarding", "Passkeys", "Digital profile"],
+        "core": "Financial core",
+        "coreItems": ["Member standing", "Products", "Rules", "Authorized operations"]
+      },
+      "depth": {
+        "eyebrow": "Engineering approach",
+        "title": "Two domains. One boundary.",
+        "lede": "The technology holds the separation. The channel can evolve without rewriting the core.",
+        "experience": "Digital experience",
+        "experienceName": "Next.js / React",
+        "api": "API / BFF",
+        "apiName": "API-first architecture",
+        "channelData": "Channel data",
+        "channelDataName": "PostgreSQL",
+        "core": "Financial core",
+        "coreName": "SQL Server",
+        "rail": [
+          { "k": "Identity", "v": "WebAuthn / Passkeys" },
+          { "k": "Communication", "v": "Microsoft Graph" },
+          { "k": "Media", "v": "Cloudflare Images" }
+        ]
+      },
+      "capabilities": {
+        "eyebrow": "Capabilities demonstrated",
+        "title": "What this work makes visible.",
+        "lede": "The kinds of intervention this case makes visible.",
+        "items": [
+          "Custom software",
+          "Applications and platforms",
+          "Enterprise systems",
+          "Systems integration",
+          "Technology architecture"
+        ]
+      },
+      "cta": {
+        "eyebrow": "Next conversation",
+        "title": "Do your customers need a modern experience on systems you cannot replace?",
+        "lede": "Tell us the problem. We start with the core that must stay and the experience that is missing.",
+        "contact": "Describe the challenge",
+        "schedule": "Schedule a conversation"
+      }
+    },
+    "coopemercadito": {
+      "meta": {
+        "title": "COOPEMERCADITO · COOPEBANACIO R.L. | BRILER",
+        "description": "An existing community, turned into a trusted digital marketplace. BRILER builds COOPEMERCADITO so members can discover products and services with verification, moderation, and proximity."
+      },
+      "back": "Back to home",
+      "hero": {
+        "eyebrow": "Case / Community marketplace",
+        "client": "COOPEBANACIO R.L.",
+        "project": "COOPEMERCADITO",
+        "title": "An existing community.",
+        "titleLine": "A trusted digital marketplace.",
+        "lede": "A custom platform for discovering products and services within the member community, with verification, moderation, and proximity search."
+      },
+      "diagram": {
+        "caption": "Community → trust → discovery → connection",
+        "community": "Community",
+        "trust": "Trust",
+        "discovery": "Discovery",
+        "connection": "Connection"
+      },
+      "challenge": {
+        "eyebrow": "01 / The challenge",
+        "title": "A community does not become a marketplace just by publishing a catalog.",
+        "lede": "It needs identity, rules, and a way to find the offer. Discovery can be open. Selling requires trust.",
+        "from": "Unstructured community",
+        "to": "Trusted network"
+      },
+      "trust": {
+        "eyebrow": "02 / Trust layer",
+        "title": "Two controls. Two different moments.",
+        "lede": "Not every account becomes a seller. Not every listing becomes visible.",
+        "member": "Member",
+        "verify": "Verification",
+        "seller": "Verified seller",
+        "listing": "Listing",
+        "review": "Moderation",
+        "visible": "Visible",
+        "who": "Who sells is tied to the member community.",
+        "what": "What is published is reviewed before it appears."
+      },
+      "discovery": {
+        "eyebrow": "03 / Discovery",
+        "title": "Location is part of how the offer is found.",
+        "lede": "The catalog is public. Proximity shapes what appears nearby, without exposing the internal system or real member data.",
+        "nearby": "Nearby",
+        "products": "Products",
+        "services": "Services",
+        "sellers": "Sellers"
+      },
+      "connection": {
+        "eyebrow": "04 / Connection",
+        "title": "The platform makes the meeting possible. The commercial relationship continues between people.",
+        "lede": "COOPEMERCADITO is not a checkout. Discover, explore, save, and talk is the model. The cooperative does not intermediate payment.",
+        "steps": ["Discover", "Explore", "Save", "Chat", "Contact"]
+      },
+      "experience": {
+        "eyebrow": "05 / Experience",
+        "title": "One network for several ways of finding each other.",
+        "lede": "The public surface brings together catalog, profiles, and contact. It is a product composition, not a screenshot.",
+        "surfaces": ["Listings", "Favorites", "Profiles", "Chat", "Reviews", "Proximity"]
+      },
+      "operations": {
+        "eyebrow": "06 / Operations",
+        "title": "A simple public experience, with controls behind it.",
+        "lede": "Moderation, administration, roles, and audit hold the network. They are not the lead; they are what makes it institutional.",
+        "items": ["Moderation", "Administration", "Roles", "Audit", "Sanctions"]
+      },
+      "depth": {
+        "eyebrow": "Engineering approach",
+        "title": "Application, data, geo, and delivery, in layers.",
+        "lede": "An evolutionary cloud architecture, designed to separate experience, data, geospatial search, and image delivery.",
+        "app": "Experience",
+        "appName": "Next.js / React",
+        "data": "Data and geo",
+        "dataName": "PostgreSQL / PostGIS",
+        "identity": "Access",
+        "identityName": "OAuth",
+        "rail": [
+          { "k": "Application", "v": "Vercel" },
+          { "k": "Cloud", "v": "Azure · Neon · Cloudflare" },
+          { "k": "Media", "v": "Image delivery / CDN" }
+        ]
+      },
+      "capabilities": {
+        "eyebrow": "Capabilities demonstrated",
+        "title": "What this work makes visible.",
+        "lede": "The kinds of intervention this case makes visible.",
+        "items": [
+          "Custom software",
+          "Applications and platforms",
+          "Systems integration",
+          "Infrastructure / cloud",
+          "Technology architecture"
+        ]
+      },
+      "cta": {
+        "eyebrow": "Next conversation",
+        "title": "Do you need to turn a community, network, or ecosystem into a digital platform?",
+        "lede": "Tell us the problem. We start with who belongs and how people find each other.",
+        "contact": "Describe the challenge",
+        "schedule": "Schedule a conversation"
+      }
+    },
+    "hubspotCore": {
+      "meta": {
+        "title": "HubSpot ↔ Financial core · COOPEBANACIO R.L. | BRILER",
+        "description": "The CRM knows the relationship. The core knows the financial reality. BRILER builds a custom integration that turns different structures into useful context across systems."
+      },
+      "back": "Back to home",
+      "hero": {
+        "eyebrow": "Case / Systems integration",
+        "client": "COOPEBANACIO R.L.",
+        "project": "HUBSPOT ↔ FINANCIAL CORE",
+        "title": "The CRM knows the relationship.",
+        "titleLine": "The core knows the financial reality.",
+        "lede": "A custom integration that connects HubSpot commercial information with institutional core data, translating different structures into useful context across systems."
+      },
+      "diagram": {
+        "caption": "Core → transformation → CRM",
+        "core": "Financial core",
+        "bridge": "BRILER bridge",
+        "crm": "HubSpot"
+      },
+      "systems": {
+        "eyebrow": "01 / Two systems",
+        "title": "Different systems. Different responsibilities.",
+        "lede": "Neither replaces the other. The value appears when both can share context.",
+        "core": "Core",
+        "coreLede": "Operational and institutional information.",
+        "coreItems": ["Member", "Status", "Savings", "Loans", "Insurance"],
+        "crm": "CRM",
+        "crmLede": "Commercial and relationship information.",
+        "crmItems": ["Contact", "Deal", "Ticket", "Owner", "Pipeline"]
+      },
+      "bridge": {
+        "eyebrow": "02 / The bridge",
+        "title": "It does not transport. It transforms.",
+        "lede": "A middle layer identifies, maps, validates, and routes. The two sides speak different languages.",
+        "verbs": ["Identify", "Map", "Transform", "Validate", "Route"],
+        "from": "Product status",
+        "to": "CRM property"
+      },
+      "flow": {
+        "eyebrow": "03 / Asymmetric flow",
+        "title": "Integration is not copying everything both ways.",
+        "lede": "Move each record to where it adds value. The integration runs in both directions, with different responsibilities.",
+        "inbound": "HubSpot → SQL",
+        "inboundItems": ["Contacts", "Deals", "Tickets", "Owners", "Pipelines"],
+        "outbound": "SQL → HubSpot",
+        "outboundItems": ["Contact enrichment"]
+      },
+      "mapping": {
+        "eyebrow": "04 / Domain-aware mapping",
+        "title": "The integration understands the business, not just the format.",
+        "lede": "The core knows products and standing. HubSpot needs properties and commercial signals. The bridge does that translation.",
+        "source": "Member",
+        "sourceItems": ["Status", "Savings", "Loans", "Insurance", "Other products"],
+        "layer": "Mapping layer",
+        "target": "CRM contact",
+        "targetItems": ["Signal", "Context", "Relationship", "Priority"]
+      },
+      "identity": {
+        "eyebrow": "05 / Identity",
+        "title": "One person. Two systems. One business key.",
+        "lede": "The match uses a business identity to pair records. Without it, context never reaches the right contact.",
+        "from": "Business identity",
+        "match": "Match",
+        "to": "CRM contact"
+      },
+      "control": {
+        "eyebrow": "06 / Controlled automation",
+        "title": "Automate with control, not just move data faster.",
+        "lede": "Batches, validation, dry-run, and controlled create or update. Some flows keep a human confirmation.",
+        "items": ["Batch processing", "Validation", "Dry-run", "Conflicts", "Create / update", "Operational log"]
+      },
+      "depth": {
+        "eyebrow": "Engineering approach",
+        "title": "One engine. Two APIs. No interface to invent.",
+        "lede": "Python orchestrates the integration. There is no frontend: the engineering is the product.",
+        "hubspot": "HubSpot API",
+        "engine": "Integration engine",
+        "engineName": "Python",
+        "sql": "SQL Server",
+        "rail": [
+          { "k": "Data access", "v": "ODBC" },
+          { "k": "CRM", "v": "HubSpot SDK" },
+          { "k": "Process", "v": "Batches · staging · mapping" }
+        ]
+      },
+      "capabilities": {
+        "eyebrow": "Capabilities demonstrated",
+        "title": "What this work makes visible.",
+        "lede": "The kinds of intervention this case makes visible.",
+        "items": [
+          "Custom software",
+          "Systems integration",
+          "Data",
+          "Automation",
+          "Enterprise systems"
+        ]
+      },
+      "cta": {
+        "eyebrow": "Next conversation",
+        "title": "When your systems do not speak the same language, we build the bridge.",
+        "lede": "Tell us what each system knows. We start with meaning, not with the connector.",
+        "contact": "Describe the challenge",
+        "schedule": "Schedule a conversation"
+      }
+    }
+  },
+  "meta": {
+    "title": "BRILER | Technology designed around your business",
+    "description": "BRILER designs, develops and integrates technology solutions that help organizations grow, modernize and operate better. Costa Rica, United States and Spain."
+  }
+}
