@@ -70,9 +70,6 @@ export async function generateMetadata({
         en: "https://briler.net/en",
       },
     },
-    icons: {
-      icon: "/brand/briler-isotype.png",
-    },
   };
 }
 

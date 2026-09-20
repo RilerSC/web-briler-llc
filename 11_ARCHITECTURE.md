@@ -125,6 +125,7 @@ Assets runtime:
 - `public/brand/briler-lockup-gradient.png`
 - `public/brand/briler-lockup-white.png`
 - `public/brand/briler-isotype.png`
+- `app/favicon.ico`, `app/icon.png` y `app/apple-icon.png` (isotipo BRILER; Next.js los sirve por convención de archivo)
 
 Logos de clientes en `public/clientes/` y normalizados del lab.  
 MADE Outer Sans permanece en `design/brand/` con licencia PERSONAL USE; no se carga en runtime.
