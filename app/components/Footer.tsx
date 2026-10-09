@@ -76,7 +76,7 @@ export default function Footer() {
         <div className="foot__bar">
           <span>{t("legal.copyright", { year })}</span>
           <nav aria-label={t("legal.nav")}>
-            <span>{t("legal.privacy")}</span>
+            <Link href={locale === "es" ? "/privacidad" : "/privacy"}>{t("legal.privacy")}</Link>
             <span>{t("legal.cookies")}</span>
             <span>{t("legal.notice")}</span>
           </nav>

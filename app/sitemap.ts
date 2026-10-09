@@ -29,6 +29,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     });
 
+    entries.push({
+      url: `${SITE_ORIGIN}/${locale === "es" ? "privacidad" : "privacy"}`,
+      alternates: {
+        languages: {
+          es: `${SITE_ORIGIN}/es/privacidad`,
+          en: `${SITE_ORIGIN}/en/privacy`,
+        },
+      },
+    });
+
     for (const slug of caseSlugs) {
       entries.push({
         url: `${SITE_ORIGIN}/${locale}/cases/${slug}`,
