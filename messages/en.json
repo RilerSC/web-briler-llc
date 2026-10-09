@@ -933,5 +933,107 @@
   "meta": {
     "title": "BRILER | Technology designed around your business",
     "description": "BRILER designs, develops and integrates technology solutions that help organizations grow, modernize and operate better. Costa Rica, United States and Spain."
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy | BRILER",
+      "description": "BRILER's privacy policy. Information about how we collect, use, and protect your personal data."
+    },
+    "back": "Back to home",
+    "hero": {
+      "title": "Privacy Policy",
+      "lastUpdated": "Last updated: October 9, 2026"
+    },
+    "sections": {
+      "responsible": {
+        "title": "1. Data Controller",
+        "content": "Briler is responsible for the processing of personal data we collect through this website and our digital services."
+      },
+      "dataCollection": {
+        "title": "2. Data We Collect",
+        "intro": "We collect information that people voluntarily provide to us through:",
+        "contactForm": {
+          "title": "Website contact form",
+          "items": [
+            "Full name",
+            "Company",
+            "Corporate email",
+            "Phone (optional)",
+            "Contact preference",
+            "Language preference",
+            "Technology challenge or business need"
+          ]
+        },
+        "scheduling": {
+          "title": "Conversation scheduling",
+          "content": "Data provided when scheduling a conversation through Koalendar, including name, email, and time preferences."
+        },
+        "socialMedia": {
+          "title": "Messages, comments, and mentions on social media",
+          "content": "When people communicate with Briler's pages on platforms such as Facebook and LinkedIn, we receive the message or comment content, the public profile name, and the information necessary to respond."
+        }
+      },
+      "dataUse": {
+        "title": "3. How We Use Your Data",
+        "intro": "We use the collected information to:",
+        "items": [
+          "Respond to inquiries and follow up on business conversations",
+          "Schedule and manage meetings",
+          "Respond to messages and comments received on our social media pages",
+          "Understand the technology needs of people who contact us"
+        ],
+        "noSale": "We never sell personal data to third parties."
+      },
+      "dataSharing": {
+        "title": "4. Who We Share Data With",
+        "intro": "We share data only with service providers that operate necessary services for our business:",
+        "providers": [
+          {
+            "name": "Microsoft",
+            "purpose": "Email and business communications"
+          },
+          {
+            "name": "Koalendar",
+            "purpose": "Conversation scheduling system"
+          },
+          {
+            "name": "Meta (Facebook)",
+            "purpose": "Receiving messages, comments, and mentions from our Facebook page"
+          },
+          {
+            "name": "Vercel",
+            "purpose": "Website hosting"
+          }
+        ],
+        "noCommercial": "We do not transfer or sell personal data to third parties for commercial purposes."
+      },
+      "dataRetention": {
+        "title": "5. Data Retention",
+        "content": "We retain personal data for as long as necessary to respond to the inquiry or maintain the business relationship. Messages and comments from social networks are retained according to the conversation activity and the corresponding platform's policies."
+      },
+      "userRights": {
+        "title": "6. Your Rights",
+        "intro": "You have the right to:",
+        "rights": [
+          "Access the personal data we hold about you",
+          "Request correction of incorrect or incomplete data",
+          "Request deletion of your personal data"
+        ],
+        "exercise": "To exercise these rights, use the contact form on this website."
+      },
+      "facebookDeletion": {
+        "title": "7. Facebook Data Deletion",
+        "intro": "If you want us to delete messages, comments, or mentions you sent to our Facebook page, you can:",
+        "options": [
+          "Submit a request through the contact form on this website, indicating the approximate date and content of the message",
+          "Send a direct message to our Facebook page requesting deletion"
+        ],
+        "action": "We will address your request within a reasonable timeframe."
+      },
+      "changes": {
+        "title": "8. Changes to This Policy",
+        "content": "We may update this Privacy Policy when necessary. The date of the last update appears at the beginning of this document."
+      }
+    }
   }
 }

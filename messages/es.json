@@ -933,5 +933,107 @@
   "meta": {
     "title": "BRILER | Tecnología diseñada alrededor de tu negocio",
     "description": "BRILER diseña, desarrolla e integra soluciones tecnológicas que ayudan a las organizaciones a crecer, modernizarse y operar mejor. Costa Rica, Estados Unidos y España."
+  },
+  "privacy": {
+    "meta": {
+      "title": "Política de Privacidad | BRILER",
+      "description": "Política de privacidad de BRILER. Información sobre cómo recogemos, usamos y protegemos tus datos personales."
+    },
+    "back": "Volver al inicio",
+    "hero": {
+      "title": "Política de Privacidad",
+      "lastUpdated": "Última actualización: 9 de octubre de 2026"
+    },
+    "sections": {
+      "responsible": {
+        "title": "1. Responsable",
+        "content": "Briler es responsable del tratamiento de los datos personales que recopilamos a través de este sitio web y nuestros servicios digitales."
+      },
+      "dataCollection": {
+        "title": "2. Datos que recogemos",
+        "intro": "Recogemos información que las personas nos proporcionan voluntariamente a través de:",
+        "contactForm": {
+          "title": "Formulario de contacto del sitio web",
+          "items": [
+            "Nombre completo",
+            "Empresa",
+            "Email corporativo",
+            "Teléfono (opcional)",
+            "Preferencia de contacto",
+            "Idioma de preferencia",
+            "Desafío tecnológico o necesidad empresarial"
+          ]
+        },
+        "scheduling": {
+          "title": "Agenda de conversaciones",
+          "content": "Datos proporcionados al agendar una conversación a través de Koalendar, incluyendo nombre, email y preferencias de horario."
+        },
+        "socialMedia": {
+          "title": "Mensajes, comentarios y menciones en redes sociales",
+          "content": "Cuando las personas se comunican con las páginas de Briler en plataformas como Facebook y LinkedIn, recibimos el contenido del mensaje o comentario, el nombre público del perfil y la información necesaria para responder."
+        }
+      },
+      "dataUse": {
+        "title": "3. Para qué usamos tus datos",
+        "intro": "Utilizamos la información recogida para:",
+        "items": [
+          "Responder a consultas y dar seguimiento a conversaciones empresariales",
+          "Agendar y gestionar reuniones",
+          "Atender mensajes y comentarios recibidos en nuestras páginas de redes sociales",
+          "Comprender las necesidades tecnológicas de las personas que nos contactan"
+        ],
+        "noSale": "Nunca vendemos datos personales a terceros."
+      },
+      "dataSharing": {
+        "title": "4. Con quién compartimos los datos",
+        "intro": "Compartimos datos únicamente con proveedores que operan servicios necesarios para nuestra actividad:",
+        "providers": [
+          {
+            "name": "Microsoft",
+            "purpose": "Correo electrónico y comunicaciones empresariales"
+          },
+          {
+            "name": "Koalendar",
+            "purpose": "Sistema de agendamiento de conversaciones"
+          },
+          {
+            "name": "Meta (Facebook)",
+            "purpose": "Recepción de mensajes, comentarios y menciones de nuestra página de Facebook"
+          },
+          {
+            "name": "Vercel",
+            "purpose": "Hosting del sitio web"
+          }
+        ],
+        "noCommercial": "No cedemos ni vendemos datos personales a terceros con fines comerciales."
+      },
+      "dataRetention": {
+        "title": "5. Conservación de datos",
+        "content": "Conservamos los datos personales mientras sea necesario para dar respuesta a la consulta o mantener la relación empresarial. Los mensajes y comentarios de redes sociales se conservan según la actividad de la conversación y las políticas de la plataforma correspondiente."
+      },
+      "userRights": {
+        "title": "6. Tus derechos",
+        "intro": "Tienes derecho a:",
+        "rights": [
+          "Acceder a los datos personales que tenemos sobre ti",
+          "Solicitar la rectificación de datos incorrectos o incompletos",
+          "Solicitar la eliminación de tus datos personales"
+        ],
+        "exercise": "Para ejercer estos derechos, utiliza el formulario de contacto de este sitio web."
+      },
+      "facebookDeletion": {
+        "title": "7. Eliminación de datos de Facebook",
+        "intro": "Si deseas que eliminemos los mensajes, comentarios o menciones que enviaste a nuestra página de Facebook, puedes:",
+        "options": [
+          "Enviar una solicitud a través del formulario de contacto de este sitio web, indicando la fecha aproximada y el contenido del mensaje",
+          "Enviar un mensaje directo a nuestra página de Facebook solicitando la eliminación"
+        ],
+        "action": "Atenderemos tu solicitud en un plazo razonable."
+      },
+      "changes": {
+        "title": "8. Cambios a esta política",
+        "content": "Podemos actualizar esta Política de Privacidad cuando sea necesario. La fecha de la última actualización aparece al inicio de este documento."
+      }
+    }
   }
 }
