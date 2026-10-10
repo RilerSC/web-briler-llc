@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 import OrganizationJsonLd from "../components/OrganizationJsonLd";
 import { MetaPixel } from "../components/MetaPixel";
 import { locales } from "../../i18n";
+import { SITE_ORIGIN } from "../lib/site";
 
 const sora = Sora({
   variable: "--font-sora",
