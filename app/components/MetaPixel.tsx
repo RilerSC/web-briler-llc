@@ -74,3 +74,9 @@ export function trackContact() {
     window.fbq("track", "Contact");
   }
 }
+
+export function trackSchedule() {
+  if (typeof window !== "undefined" && typeof window.fbq === "function") {
+    window.fbq("trackCustom", "Schedule");
+  }
+}
