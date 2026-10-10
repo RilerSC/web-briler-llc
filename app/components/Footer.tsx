@@ -71,7 +71,7 @@ export default function Footer() {
             <h4>{t("contact.title")}</h4>
             <ul>
               <li>
-                <a href="https://briler.net">briler.net</a>
+                <a href="https://www.briler.net">www.briler.net</a>
               </li>
               <li>
                 <Link href="/agendar" onClick={() => trackLead()}>

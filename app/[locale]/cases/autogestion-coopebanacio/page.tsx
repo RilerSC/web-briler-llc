@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/navigation";
+import { SITE_ORIGIN } from "@/app/lib/site";
 import Arrow from "../../../components/briler/Arrow";
 import CapabilityField from "../../../components/briler/cases/CapabilityField";
 import CaseCTA from "../../../components/briler/cases/CaseCTA";
@@ -21,7 +22,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "cases.autogestion" });
-  const canonical = `https://briler.net/${locale}/cases/autogestion-coopebanacio`;
+  const canonical = `${SITE_ORIGIN}/${locale}/cases/autogestion-coopebanacio`;
 
   return {
     title: t("meta.title"),
@@ -37,8 +38,9 @@ export async function generateMetadata({
     alternates: {
       canonical,
       languages: {
-        es: "https://briler.net/es/cases/autogestion-coopebanacio",
-        en: "https://briler.net/en/cases/autogestion-coopebanacio",
+        es: `${SITE_ORIGIN}/es/cases/autogestion-coopebanacio`,
+        en: `${SITE_ORIGIN}/en/cases/autogestion-coopebanacio`,
+        "x-default": `${SITE_ORIGIN}/es/cases/autogestion-coopebanacio`,
       },
     },
   };

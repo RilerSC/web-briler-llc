@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/navigation";
+import { SITE_ORIGIN } from "@/app/lib/site";
 import Arrow from "../../../components/briler/Arrow";
 import ArchitectureField from "../../../components/briler/cases/ArchitectureField";
 import CapabilityField from "../../../components/briler/cases/CapabilityField";
@@ -20,7 +21,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "cases.erpWeb" });
-  const canonical = `https://briler.net/${locale}/cases/erp-web-coopebanacio`;
+  const canonical = `${SITE_ORIGIN}/${locale}/cases/erp-web-coopebanacio`;
 
   return {
     title: t("meta.title"),
@@ -36,8 +37,9 @@ export async function generateMetadata({
     alternates: {
       canonical,
       languages: {
-        es: "https://briler.net/es/cases/erp-web-coopebanacio",
-        en: "https://briler.net/en/cases/erp-web-coopebanacio",
+        es: `${SITE_ORIGIN}/es/cases/erp-web-coopebanacio`,
+        en: `${SITE_ORIGIN}/en/cases/erp-web-coopebanacio`,
+        "x-default": `${SITE_ORIGIN}/es/cases/erp-web-coopebanacio`,
       },
     },
   };

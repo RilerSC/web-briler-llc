@@ -1,1 +1,1 @@
-export const SITE_ORIGIN = "https://briler.net";
+export const SITE_ORIGIN = "https://www.briler.net";

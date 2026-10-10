@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/navigation";
+import { SITE_ORIGIN } from "@/app/lib/site";
 import Arrow from "../../../components/briler/Arrow";
 import AsymmetricFlow from "../../../components/briler/cases/AsymmetricFlow";
 import BridgeArch from "../../../components/briler/cases/BridgeArch";
@@ -22,7 +23,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "cases.hubspotCore" });
-  const canonical = `https://briler.net/${locale}/cases/hubspot-core-coopebanacio`;
+  const canonical = `${SITE_ORIGIN}/${locale}/cases/hubspot-core-coopebanacio`;
 
   return {
     title: t("meta.title"),
@@ -38,8 +39,9 @@ export async function generateMetadata({
     alternates: {
       canonical,
       languages: {
-        es: "https://briler.net/es/cases/hubspot-core-coopebanacio",
-        en: "https://briler.net/en/cases/hubspot-core-coopebanacio",
+        es: `${SITE_ORIGIN}/es/cases/hubspot-core-coopebanacio`,
+        en: `${SITE_ORIGIN}/en/cases/hubspot-core-coopebanacio`,
+        "x-default": `${SITE_ORIGIN}/es/cases/hubspot-core-coopebanacio`,
       },
     },
   };
