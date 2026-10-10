@@ -4,6 +4,7 @@ import { Link } from "@/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import Script from "next/script";
 import { useEffect, useMemo, useState } from "react";
+import { trackLead } from "@/app/components/MetaPixel";
 
 export default function SchedulePage() {
   const t = useTranslations("schedule");
@@ -48,7 +49,10 @@ export default function SchedulePage() {
             borderRadius: "0px",
           },
         });
-        if (mounted) setIsLoading(false);
+        if (mounted) {
+          setIsLoading(false);
+          trackLead();
+        }
         return true;
       }
       return false;

@@ -17,6 +17,7 @@ import JsonLd from "../../JsonLd";
 import Arrow from "../Arrow";
 import Reveal from "../Reveal";
 import SolutionMark from "./SolutionMark";
+import { ScheduleButton } from "./ScheduleButton";
 
 type Segment = "soluciones" | "solutions";
 
@@ -317,9 +318,7 @@ export default async function SolutionLanding({
                 {shared("ctaContact")}
                 <Arrow />
               </Link>
-              <Link className="btn btn--ghost" href="/agendar" locale={pageLocale} data-cta="schedule" data-solution={id}>
-                {shared("ctaSchedule")}
-              </Link>
+              <ScheduleButton locale={pageLocale} solutionId={id} label={shared("ctaSchedule")} />
             </div>
           </Reveal>
         </div>

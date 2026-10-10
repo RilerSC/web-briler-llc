@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { countries } from "@/app/lib/countries";
 import Arrow from "./Arrow";
+import { trackContact } from "@/app/components/MetaPixel";
 
 const empty = {
   name: "",
@@ -52,6 +53,7 @@ export default function ContactForm() {
         setStatus("success");
         setMessage(data.message || t("form.submit"));
         setFormData({ ...empty, language: locale === "en" ? "en" : "es" });
+        trackContact();
       } else {
         setStatus("error");
         setMessage(data.error || "Error");
