@@ -9,7 +9,7 @@ export default async function OrganizationJsonLd({ locale }: { locale: string })
   const organizationData = {
     "@context": "https://schema.org",
     "@type": ["Organization", "ProfessionalService"],
-    name: "BRILER",
+    name: "Briler",
     legalName: "3102943574 S.R.L.",
     url: SITE_ORIGIN,
     logo: `${SITE_ORIGIN}/brand/briler-isotype.png`,
@@ -52,13 +52,13 @@ export default async function OrganizationJsonLd({ locale }: { locale: string })
   const websiteData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "BRILER",
+    name: "Briler",
     url: SITE_ORIGIN,
     inLanguage: [isSpanish ? "es-CR" : "en-US"],
     description: t("description"),
     publisher: {
       "@type": "Organization",
-      name: "BRILER",
+      name: "Briler",
     },
   };
 

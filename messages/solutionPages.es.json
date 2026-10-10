@@ -20,7 +20,7 @@
   },
   "software": {
     "meta": {
-      "title": "Desarrollo de software a medida en Costa Rica | BRILER",
+      "title": "Desarrollo de software a medida en Costa Rica | Briler",
       "description": "Diseñamos y construimos software alrededor de cómo opera una organización cuando una solución estándar no encaja. Desde Costa Rica hacia Estados Unidos y España."
     },
     "schema": {
@@ -122,7 +122,7 @@
   },
   "integration": {
     "meta": {
-      "title": "Integración de sistemas empresariales en Costa Rica | BRILER",
+      "title": "Integración de sistemas empresariales en Costa Rica | Briler",
       "description": "Integramos ERP, CRM y sistemas de negocio alrededor de las responsabilidades reales de cada uno. Desde Costa Rica hacia Estados Unidos y España."
     },
     "schema": {
@@ -224,7 +224,7 @@
   },
   "legacy": {
     "meta": {
-      "title": "Modernización de sistemas legacy | BRILER",
+      "title": "Modernización de sistemas legacy | Briler",
       "description": "Modernizamos sistemas críticos de forma progresiva. Coexistir, transitar y modernizar — sin exigir un reemplazo total el primer día."
     },
     "schema": {
@@ -312,7 +312,7 @@
   },
   "automation": {
     "meta": {
-      "title": "Automatización de procesos e IA aplicada en Costa Rica | BRILER",
+      "title": "Automatización de procesos e IA aplicada en Costa Rica | Briler",
       "description": "Automatizamos procesos de negocio y aplicamos inteligencia artificial donde mejora una decisión u operación. Desde Costa Rica hacia Estados Unidos y España."
     },
     "schema": {
@@ -404,7 +404,7 @@
   },
   "infrastructure": {
     "meta": {
-      "title": "Arquitectura e infraestructura tecnológica para empresas | BRILER",
+      "title": "Arquitectura e infraestructura tecnológica para empresas | Briler",
       "description": "Diseñamos y modernizamos la plataforma que una solución o una organización necesita. No somos un hyperscaler ni un reseller genérico de cloud."
     },
     "schema": {

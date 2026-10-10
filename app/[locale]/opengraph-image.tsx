@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt = "BRILER";
+export const alt = "Briler";
 export const size = {
   width: 1200,
   height: 630,
@@ -71,7 +71,7 @@ export default async function Image({ params }: { params: Promise<{ locale: stri
                 letterSpacing: "0.05em",
               }}
             >
-              BRILER
+              Briler
             </div>
           </div>
         </div>
