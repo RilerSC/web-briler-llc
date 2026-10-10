@@ -3,6 +3,7 @@
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/navigation";
 import { SOLUTION_IDS, isLocale, solutionPath } from "@/app/lib/solutions";
+import { trackLead } from "@/app/components/MetaPixel";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -60,7 +61,9 @@ export default function Footer() {
                 <a href="https://briler.net">briler.net</a>
               </li>
               <li>
-                <Link href="/agendar">{t("contact.schedule")}</Link>
+                <Link href="/agendar" onClick={() => trackLead()}>
+                  {t("contact.schedule")}
+                </Link>
               </li>
               <li>
                 <span className="slot">{t("contact.email")}</span>

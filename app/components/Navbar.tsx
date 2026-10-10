@@ -5,6 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/navigation";
 import { SOLUTION_IDS, isLocale, solutionPath } from "@/app/lib/solutions";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { trackLead } from "@/app/components/MetaPixel";
 
 export default function Navbar() {
   const t = useTranslations("navbar");
@@ -66,7 +67,7 @@ export default function Navbar() {
 
         <div className="nav__right">
           <LanguageSwitcher />
-          <Link className="btn btn--ghost btn--sm nav__cta" href="/agendar">
+          <Link className="btn btn--ghost btn--sm nav__cta" href="/agendar" onClick={() => trackLead()}>
             {t("cta")}
           </Link>
           <button
@@ -106,7 +107,14 @@ export default function Navbar() {
             <span className="mnav__i">03</span>
             {t("contact")}
           </Link>
-          <Link href="/agendar" onClick={close} className="btn btn--primary mnav__cta">
+          <Link
+            href="/agendar"
+            onClick={() => {
+              close();
+              trackLead();
+            }}
+            className="btn btn--primary mnav__cta"
+          >
             {t("cta")}
           </Link>
         </nav>

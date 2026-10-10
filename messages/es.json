@@ -998,7 +998,7 @@
           },
           {
             "name": "Meta (Facebook)",
-            "purpose": "Recepción de mensajes, comentarios y menciones de nuestra página de Facebook"
+            "purpose": "Recepción de mensajes, comentarios y menciones de nuestra página de Facebook. También utilizamos Meta Pixel para medir el rendimiento de nuestros anuncios y realizar remarketing, mediante cookies y tecnologías similares que registran las visitas al sitio y determinadas interacciones como el envío de formularios o el agendamiento de conversaciones"
           },
           {
             "name": "Vercel",

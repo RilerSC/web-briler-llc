@@ -1,6 +1,9 @@
+"use client";
+
 import { Link } from "@/navigation";
 import Arrow from "../Arrow";
 import Reveal from "../Reveal";
+import { trackLead } from "@/app/components/MetaPixel";
 
 type CaseCTAProps = {
   eyebrow: string;
@@ -38,7 +41,7 @@ export default function CaseCTA({
                 {contact}
                 <Arrow />
               </Link>
-              <Link className="btn btn--ghost" href="/agendar" data-cta="schedule">
+              <Link className="btn btn--ghost" href="/agendar" data-cta="schedule" onClick={() => trackLead()}>
                 {schedule}
               </Link>
             </div>

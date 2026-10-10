@@ -4,6 +4,7 @@ import { Link } from "@/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import Script from "next/script";
 import { useEffect, useMemo, useState } from "react";
+import { trackSchedule } from "@/app/components/MetaPixel";
 
 export default function SchedulePage() {
   const t = useTranslations("schedule");
@@ -48,7 +49,9 @@ export default function SchedulePage() {
             borderRadius: "0px",
           },
         });
-        if (mounted) setIsLoading(false);
+        if (mounted) {
+          setIsLoading(false);
+        }
         return true;
       }
       return false;
@@ -71,6 +74,18 @@ export default function SchedulePage() {
       if (interval) clearInterval(interval);
     };
   }, [widgetConfig]);
+
+  useEffect(() => {
+    const handleMessage = (event: MessageEvent) => {
+      if (event.origin !== "https://koalendar.com") return;
+      if (event.data?.type === "booking.confirmed" || event.data?.event === "booking.confirmed") {
+        trackSchedule();
+      }
+    };
+
+    window.addEventListener("message", handleMessage);
+    return () => window.removeEventListener("message", handleMessage);
+  }, []);
 
   return (
     <>
