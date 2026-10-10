@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/navigation";
+import { SITE_ORIGIN } from "@/app/lib/site";
 import Arrow from "../../../components/briler/Arrow";
 import CapabilityField from "../../../components/briler/cases/CapabilityField";
 import CaseCTA from "../../../components/briler/cases/CaseCTA";
@@ -22,7 +23,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "cases.coopemercadito" });
-  const canonical = `https://briler.net/${locale}/cases/coopemercadito-coopebanacio`;
+  const canonical = `${SITE_ORIGIN}/${locale}/cases/coopemercadito-coopebanacio`;
 
   return {
     title: t("meta.title"),
@@ -38,8 +39,9 @@ export async function generateMetadata({
     alternates: {
       canonical,
       languages: {
-        es: "https://briler.net/es/cases/coopemercadito-coopebanacio",
-        en: "https://briler.net/en/cases/coopemercadito-coopebanacio",
+        es: `${SITE_ORIGIN}/es/cases/coopemercadito-coopebanacio`,
+        en: `${SITE_ORIGIN}/en/cases/coopemercadito-coopebanacio`,
+        "x-default": `${SITE_ORIGIN}/es/cases/coopemercadito-coopebanacio`,
       },
     },
   };

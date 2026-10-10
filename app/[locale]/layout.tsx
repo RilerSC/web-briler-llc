@@ -43,7 +43,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
-  const canonical = `https://briler.net/${locale}`;
+  const canonical = `${SITE_ORIGIN}/${locale}`;
 
   return {
     title: t("title"),
@@ -68,8 +68,9 @@ export async function generateMetadata({
     alternates: {
       canonical,
       languages: {
-        es: "https://briler.net/es",
-        en: "https://briler.net/en",
+        es: `${SITE_ORIGIN}/es`,
+        en: `${SITE_ORIGIN}/en`,
+        "x-default": `${SITE_ORIGIN}/es`,
       },
     },
   };

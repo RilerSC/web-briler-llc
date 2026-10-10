@@ -20,8 +20,8 @@
   },
   "software": {
     "meta": {
-      "title": "Desarrollo de software a medida para empresas | BRILER",
-      "description": "Diseñamos y construimos software alrededor de cómo opera una organización cuando una solución estándar no encaja. Costa Rica, Estados Unidos y España."
+      "title": "Desarrollo de software a medida en Costa Rica | BRILER",
+      "description": "Diseñamos y construimos software alrededor de cómo opera una organización cuando una solución estándar no encaja. Desde Costa Rica hacia Estados Unidos y España."
     },
     "schema": {
       "name": "Desarrollo de software a medida",
@@ -122,8 +122,8 @@
   },
   "integration": {
     "meta": {
-      "title": "Integración de sistemas empresariales | BRILER",
-      "description": "Integramos ERP, CRM y sistemas de negocio alrededor de las responsabilidades reales de cada uno. No vendemos conectores: diseñamos el intercambio."
+      "title": "Integración de sistemas empresariales en Costa Rica | BRILER",
+      "description": "Integramos ERP, CRM y sistemas de negocio alrededor de las responsabilidades reales de cada uno. Desde Costa Rica hacia Estados Unidos y España."
     },
     "schema": {
       "name": "Integración de sistemas empresariales",
@@ -312,8 +312,8 @@
   },
   "automation": {
     "meta": {
-      "title": "Automatización e IA aplicada para empresas | BRILER",
-      "description": "Automatizamos lo repetitivo y aplicamos inteligencia donde mejora una decisión, un proceso o una operación. Sin vender IA como moda."
+      "title": "Automatización de procesos e IA aplicada en Costa Rica | BRILER",
+      "description": "Automatizamos procesos de negocio y aplicamos inteligencia artificial donde mejora una decisión u operación. Desde Costa Rica hacia Estados Unidos y España."
     },
     "schema": {
       "name": "Automatización e inteligencia artificial aplicada",

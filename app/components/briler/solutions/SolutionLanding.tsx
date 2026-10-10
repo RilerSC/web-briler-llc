@@ -79,6 +79,7 @@ export async function solutionMetadata(
       languages: {
         es: solutionUrl(id, "es"),
         en: solutionUrl(id, "en"),
+        "x-default": solutionUrl(id, "es"),
       },
     },
   };
