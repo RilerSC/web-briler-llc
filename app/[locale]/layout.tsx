@@ -9,6 +9,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import OrganizationJsonLd from "../components/OrganizationJsonLd";
 import { MetaPixel } from "../components/MetaPixel";
+import WhatsAppButton from "../components/WhatsAppButton";
 import { locales } from "../../i18n";
 
 const sora = Sora({
@@ -99,6 +100,7 @@ export default async function LocaleLayout({
           <Navbar />
           <main id="main">{children}</main>
           <Footer />
+          <WhatsAppButton />
         </NextIntlClientProvider>
       </body>
     </html>

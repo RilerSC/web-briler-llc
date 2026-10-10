@@ -3,7 +3,13 @@
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/navigation";
 import { SOLUTION_IDS, isLocale, solutionPath } from "@/app/lib/solutions";
-import { trackLead } from "@/app/components/MetaPixel";
+import { trackLead, trackContact } from "@/app/components/MetaPixel";
+import { getWhatsAppLink } from "@/app/lib/whatsapp";
+
+const WHATSAPP_MESSAGES = {
+  es: "Hola Briler, quiero conversar sobre un proyecto.",
+  en: "Hi Briler, I'd like to talk about a project.",
+} as const;
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -12,6 +18,13 @@ export default function Footer() {
   const year = new Date().getFullYear();
   const company = t.raw("company.items") as { href: string; label: string }[];
   const pageLocale = isLocale(locale) ? locale : "en";
+
+  const waMessage = WHATSAPP_MESSAGES[locale as keyof typeof WHATSAPP_MESSAGES] || WHATSAPP_MESSAGES.en;
+  const waLink = getWhatsAppLink(locale, waMessage);
+
+  const handleWhatsAppClick = () => {
+    trackContact();
+  };
 
   return (
     <footer className="foot">
@@ -69,7 +82,12 @@ export default function Footer() {
                 <span className="slot">{t("contact.email")}</span>
               </li>
               <li>
-                <span className="slot">{t("contact.phone")}</span>
+                <a href={`tel:${t("contact.phone").replace(/[^0-9+]/g, "")}`}>{t("contact.phone")}</a>
+              </li>
+              <li>
+                <a href={waLink} target="_blank" rel="noopener noreferrer" onClick={handleWhatsAppClick}>
+                  {t("contact.whatsapp")}
+                </a>
               </li>
             </ul>
             <p className="foot__pending">{t("contact.pending")}</p>
