@@ -12,7 +12,7 @@ const MESSAGES = {
 export default function WhatsAppButton() {
   const locale = useLocale();
   const message = MESSAGES[locale as keyof typeof MESSAGES] || MESSAGES.en;
-  const waLink = getWhatsAppLink(message);
+  const waLink = getWhatsAppLink(locale, message);
 
   const handleClick = () => {
     trackContact();

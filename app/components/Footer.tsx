@@ -20,7 +20,7 @@ export default function Footer() {
   const pageLocale = isLocale(locale) ? locale : "en";
 
   const waMessage = WHATSAPP_MESSAGES[locale as keyof typeof WHATSAPP_MESSAGES] || WHATSAPP_MESSAGES.en;
-  const waLink = getWhatsAppLink(waMessage);
+  const waLink = getWhatsAppLink(locale, waMessage);
 
   const handleWhatsAppClick = () => {
     trackContact();
