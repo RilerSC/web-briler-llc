@@ -5,6 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import Script from "next/script";
 import { useEffect, useMemo, useState } from "react";
 import { trackSchedule } from "@/app/components/MetaPixel";
+import { trackAgendarSubmit } from "@/app/components/GoogleAnalytics";
 
 export default function SchedulePage() {
   const t = useTranslations("schedule");
@@ -80,6 +81,7 @@ export default function SchedulePage() {
       if (event.origin !== "https://koalendar.com") return;
       if (event.data?.type === "booking.confirmed" || event.data?.event === "booking.confirmed") {
         trackSchedule();
+        trackAgendarSubmit();
       }
     };
 

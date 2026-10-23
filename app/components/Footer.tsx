@@ -4,6 +4,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/navigation";
 import { SOLUTION_IDS, isLocale, solutionPath } from "@/app/lib/solutions";
 import { trackLead, trackContact } from "@/app/components/MetaPixel";
+import { trackAgendarClick, trackWhatsAppClick, trackContactClick } from "@/app/components/GoogleAnalytics";
 import { getWhatsAppLink } from "@/app/lib/whatsapp";
 
 const WHATSAPP_MESSAGES = {
@@ -24,6 +25,16 @@ export default function Footer() {
 
   const handleWhatsAppClick = () => {
     trackContact();
+    trackWhatsAppClick(locale, "footer");
+  };
+
+  const handleScheduleClick = () => {
+    trackLead();
+    trackAgendarClick();
+  };
+
+  const handlePhoneClick = () => {
+    trackContactClick("phone");
   };
 
   return (
@@ -74,7 +85,7 @@ export default function Footer() {
                 <a href="https://www.briler.net">www.briler.net</a>
               </li>
               <li>
-                <Link href="/agendar" onClick={() => trackLead()}>
+                <Link href="/agendar" onClick={handleScheduleClick}>
                   {t("contact.schedule")}
                 </Link>
               </li>
@@ -82,7 +93,9 @@ export default function Footer() {
                 <span className="slot">{t("contact.email")}</span>
               </li>
               <li>
-                <a href={`tel:${t("contact.phone").replace(/[^0-9+]/g, "")}`}>{t("contact.phone")}</a>
+                <a href={`tel:${t("contact.phone").replace(/[^0-9+]/g, "")}`} onClick={handlePhoneClick}>
+                  {t("contact.phone")}
+                </a>
               </li>
               <li>
                 <a href={waLink} target="_blank" rel="noopener noreferrer" onClick={handleWhatsAppClick}>
