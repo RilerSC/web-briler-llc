@@ -3,6 +3,7 @@
 import { useLocale } from "next-intl";
 import { getWhatsAppLink } from "@/app/lib/whatsapp";
 import { trackContact } from "./MetaPixel";
+import { trackWhatsAppClick } from "./GoogleAnalytics";
 
 const MESSAGES = {
   es: "Hola Briler, quiero conversar sobre un proyecto.",
@@ -16,6 +17,7 @@ export default function WhatsAppButton() {
 
   const handleClick = () => {
     trackContact();
+    trackWhatsAppClick(locale, "floating_button");
   };
 
   return (

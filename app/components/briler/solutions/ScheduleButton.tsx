@@ -2,6 +2,7 @@
 
 import { Link } from "@/navigation";
 import { trackLead } from "@/app/components/MetaPixel";
+import { trackAgendarClick } from "@/app/components/GoogleAnalytics";
 
 type ScheduleButtonProps = {
   locale: string;
@@ -17,7 +18,10 @@ export function ScheduleButton({ locale, solutionId, label }: ScheduleButtonProp
       locale={locale}
       data-cta="schedule"
       data-solution={solutionId}
-      onClick={() => trackLead()}
+      onClick={() => {
+        trackLead();
+        trackAgendarClick();
+      }}
     >
       {label}
     </Link>

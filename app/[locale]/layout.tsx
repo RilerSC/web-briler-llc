@@ -9,6 +9,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import OrganizationJsonLd from "../components/OrganizationJsonLd";
 import { MetaPixel } from "../components/MetaPixel";
+import { GoogleAnalytics } from "../components/GoogleAnalytics";
 import WhatsAppButton from "../components/WhatsAppButton";
 import { locales } from "../../i18n";
 import { SITE_ORIGIN } from "../lib/site";
@@ -97,6 +98,7 @@ export default async function LocaleLayout({
     <html lang={locale} data-scroll-behavior="smooth" className={`${sora.variable} ${inter.variable} ${jetbrains.variable}`}>
       <body>
         <MetaPixel />
+        <GoogleAnalytics />
         <OrganizationJsonLd locale={locale} />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />

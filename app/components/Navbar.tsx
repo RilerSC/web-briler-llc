@@ -6,6 +6,7 @@ import { Link } from "@/navigation";
 import { SOLUTION_IDS, isLocale, solutionPath } from "@/app/lib/solutions";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { trackLead } from "@/app/components/MetaPixel";
+import { trackAgendarClick } from "@/app/components/GoogleAnalytics";
 
 export default function Navbar() {
   const t = useTranslations("navbar");
@@ -67,7 +68,14 @@ export default function Navbar() {
 
         <div className="nav__right">
           <LanguageSwitcher />
-          <Link className="btn btn--ghost btn--sm nav__cta" href="/agendar" onClick={() => trackLead()}>
+          <Link
+            className="btn btn--ghost btn--sm nav__cta"
+            href="/agendar"
+            onClick={() => {
+              trackLead();
+              trackAgendarClick();
+            }}
+          >
             {t("cta")}
           </Link>
           <button
@@ -112,6 +120,7 @@ export default function Navbar() {
             onClick={() => {
               close();
               trackLead();
+              trackAgendarClick();
             }}
             className="btn btn--primary mnav__cta"
           >

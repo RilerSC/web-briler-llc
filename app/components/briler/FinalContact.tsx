@@ -7,6 +7,7 @@ import { drawConverge } from "@/app/lib/briler-figures";
 import ContactForm from "./ContactForm";
 import Reveal from "./Reveal";
 import { trackLead } from "@/app/components/MetaPixel";
+import { trackAgendarClick } from "@/app/components/GoogleAnalytics";
 
 export default function FinalContact() {
   const t = useTranslations("briler.contact");
@@ -32,7 +33,14 @@ export default function FinalContact() {
             <h2 id="cta-h">{t("title")}</h2>
             <p className="lede">{t("lede")}</p>
             <div className="final__actions">
-              <Link className="btn btn--ghost" href="/agendar" onClick={() => trackLead()}>
+              <Link
+                className="btn btn--ghost"
+                href="/agendar"
+                onClick={() => {
+                  trackLead();
+                  trackAgendarClick();
+                }}
+              >
                 {t("schedule")}
               </Link>
             </div>
